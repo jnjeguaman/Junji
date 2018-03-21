@@ -1,0 +1,13 @@
+tr td {
+    background:#ccc;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: normal;
+}
+tr.hover td {
+    background: orange;
+}
+tr.active td {
+    background: lightgreen;
+}
+	

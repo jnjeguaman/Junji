@@ -1,0 +1,85 @@
+
+/MonthName
+[
+(01) (02) (03) (04)
+(05) (06) (07) (08)
+(09) (10) (11) (12)
+] def
+
+<<
+/EndPage
+{
+2 eq { pop false }
+{
+gsave  
+/Helvetica_Bold 10 selectfont
+
+/strcat
+{ 0 3 2 roll % <str> <pos> <A>
+{
+2 index length 2 index sub % <str> <pos> A[i] <freelen>
+exch 4 copy pop getinterval % <str> <pos> <freelen> A[i] <free>
+1 index type /stringtype ne
+{ cvs }{ copy } ifelse % <str> <pos> <freelen> <buf>
+length exch pop add % <str> <pos'>
+} forall
+0 exch getinterval
+} bind def
+
+{ [ (%Calendar%) currentdevparams
+} stopped
+{ cleartomark (no clock)
+}{
+begin
+0 1 0 setrgbcolor 50 665 moveto 45 rotate ()
+Day (/) Month (/) Year (. )
+Hour (:) Minute (:) Second ( )
+end ]
+50 string strcat
+} ifelse
+
+show
+grestore
+
+%IMAGEN
+gsave
+ 150 260 translate     % set lower left of image at (360, 72)
+  175 60 scale         % size of rendered image is 175 points by 47 points
+  300                   % number of columns per row
+  300                    % number of rows
+  8                    % bits per color channel (1, 2, 4, or 8)
+  [400 0 0 -133 0 133]       % transform array... maps unit square to pixel
+  (1.jpg) (r) file /DCTDecode filter % opens the file and filters the image data
+  false                 % pull channels from separate sources
+  3                    % 3 color channels (RGB)
+  colorimage
+grestore
+%FIN IMAGEN
+
+%INICIO TEXTOS
+gsave
+       /Helvetica_Bold 10 selectfont
+        0 1 0 setrgbcolor 30 720 moveto 45 rotate (Recibido) show
+     grestore
+
+     gsave
+       /Helvetica_Bold 10 selectfont
+        0 1 0 setrgbcolor 25 700 moveto 45 rotate (Oficina de Partes) show
+     grestore
+
+     gsave
+       /Helvetica_Bold 10 selectfont
+        0 1 0 setrgbcolor 25 680 moveto 45 rotate (            I REGION) show
+     grestore
+
+     
+          gsave
+       /Helvetica_Bold 10 selectfont
+        0 1 0 setrgbcolor 60 695 moveto 45 rotate (J U N J I) show
+     grestore
+%FIN TEXTOS
+
+true
+} ifelse
+} bind
+>> setpagedevice
