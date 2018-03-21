@@ -1,0 +1,207 @@
+/*  
+Theme Name: Defensoria Penal 2.0
+Theme URI: http://www.defensoriapenal.cl/
+Description: Creado por taituns@gmail.com.
+Version: 2.0
+Author: Sebastian Jeria L.
+Author URI: http://www.panoptica.cl/
+*/
+/* Body */
+body {
+	background-color: #CCCCCC;
+	margin: 0px;
+}
+
+/* Contenedores */
+#contenedor {
+	background-color: #FFFFFF;
+	margin: auto;
+	height: 100%;
+	width: 1000px;
+}
+#banner {
+	margin: auto;
+	height: 180px;
+	width: 990px;
+}
+#body {
+	margin: auto;
+	height: 100%;
+	width: 990px;
+}
+#footer {
+	margin: auto;
+	height: 40px;
+	width: 990px;
+}
+/* Textos */
+.txt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+}
+.txt_blanco {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.txt_blanco_9 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.txt_gris_9 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+}
+.titulos{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	text-indent: 9px;
+      
+}
+.titulos2{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-indent: 15px;
+    text-transform: uppercase;
+}
+.titulos_celestes {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #548ac7;
+}
+.titulos_blanco {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.titulos_gris {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #3333333;
+}
+/* Celdas */
+.celda_gris {
+	background-color: #ebf3ff;
+}
+/* Vinculos */
+.v1 {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+A.v1:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.v1:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A.v1:hover {
+	text-decoration: none;
+	color: #cccccc;
+}
+A.v1:active {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+
+.v1b {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+A.v1b:link {
+	color: #000000;
+	text-decoration: none;
+}
+A.v1b:visited {
+	text-decoration: none;
+	color: #000000;
+}
+A.v1b:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+A.v1b:active {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+.v2 {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+A.v2:link {
+	color: #333333;
+	text-decoration: none;
+}
+A.v2:visited {
+	text-decoration: none;
+	color: #333333;
+}
+A.v2:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A.v2:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.v3 {
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+A.v3:link {
+	color: #333333;
+	text-decoration: none;
+}
+A.3:visited {
+	text-decoration: none;
+	color: #333333;
+}
+A.v3:hover {
+	text-decoration: none;
+	color: #003399;
+}
+A.v3:active {
+	text-decoration: none;
+	color: #003399;
+}
+.v4 {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+A.v4:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.v4:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A.v4:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+A.v4:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}

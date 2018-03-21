@@ -1,0 +1,142 @@
+[10-Jan-2016 21:31:20 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(c:/temp/sess_b49a2807958bd7dc883031db9e1a0300, O_RDWR) failed: No such file or directory (2) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:31:20 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php:3) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:33:24 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(c:/temp/sess_b49a2807958bd7dc883031db9e1a0300, O_RDWR) failed: No such file or directory (2) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:33:24 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php:3) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:37:05 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(c:/temp/sess_b49a2807958bd7dc883031db9e1a0300, O_RDWR) failed: No such file or directory (2) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:37:05 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php:3) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:39:17 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(c:/temp/sess_b49a2807958bd7dc883031db9e1a0300, O_RDWR) failed: No such file or directory (2) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:39:17 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php:3) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:40:58 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(c:/temp/sess_5aa433947c89f5ad9d6e1b7a98fc315f, O_RDWR) failed: No such file or directory (2) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:40:58 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php:3) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:44:02 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(c:/temp/sess_b49a2807958bd7dc883031db9e1a0300, O_RDWR) failed: No such file or directory (2) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:44:02 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php:3) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:45:40 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(c:/temp/sess_b49a2807958bd7dc883031db9e1a0300, O_RDWR) failed: No such file or directory (2) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[10-Jan-2016 21:45:40 America/Argentina/Buenos_Aires] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php:3) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inc/config.php on line 3
+[18-Feb-2016 11:58:55 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[18-Feb-2016 16:33:12 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[18-Feb-2016 16:33:49 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Feb-2016 12:11:27 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Feb-2016 12:13:16 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Feb-2016 12:15:04 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Feb-2016 12:18:12 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Feb-2016 12:26:26 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Feb-2016 12:43:22 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Feb-2016 12:56:54 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[26-Feb-2016 13:59:54 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[26-Feb-2016 14:01:22 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[26-Feb-2016 18:52:34 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 12:51:52 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 12:54:56 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 15:34:24 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 16:57:06 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 16:59:16 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 17:02:04 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 17:11:45 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 17:14:37 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 17:20:05 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 17:21:10 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[29-Feb-2016 17:28:17 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[04-Mar-2016 14:03:54 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[06-Apr-2016 16:21:25 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[06-Apr-2016 16:27:15 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[06-Apr-2016 17:38:53 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[08-Apr-2016 16:36:13 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[08-Apr-2016 16:39:03 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 5000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[12-Apr-2016 17:26:53 America/Santiago] PHP Parse error:  syntax error, unexpected T_IF, expecting ',' or ';' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/grabafactura.php on line 94
+[27-Apr-2016 15:30:26 America/Santiago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inv_contaedit_actualizar.php:1) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inv_contaedit_actualizar.php on line 2
+[27-Apr-2016 16:39:01 America/Santiago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/cae12628/public_html/sistemas/seguimientos/sitio2/inv_contaedit_actualizar.php:1) in /home/cae12628/public_html/sistemas/seguimientos/sitio2/inv_contaedit_actualizar.php on line 2
+[26-May-2016 17:07:06 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[26-May-2016 17:07:06 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[27-May-2016 15:49:06 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[27-May-2016 15:49:06 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[27-May-2016 16:44:10 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[27-May-2016 16:44:56 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[27-May-2016 16:47:33 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[28-May-2016 12:32:56 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:32:59 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:34:17 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:34:20 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:34:51 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:34:56 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:37:42 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:37:44 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[28-May-2016 12:37:45 America/Santiago] PHP Parse error:  syntax error, unexpected '<' in /home/cae12628/public_html/sistemas/seguimientos/sitio2/compra_orden.php on line 721
+[02-Jun-2016 14:27:11 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[02-Jun-2016 14:27:11 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[05-Jun-2016 00:10:53 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[05-Jun-2016 00:10:53 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[07-Jun-2016 23:29:04 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[07-Jun-2016 23:29:04 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[11-Jun-2016 19:29:05 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[11-Jun-2016 19:29:05 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[12-Jun-2016 23:57:46 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[12-Jun-2016 23:57:46 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[14-Jun-2016 04:05:22 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[14-Jun-2016 04:05:22 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[14-Jun-2016 18:12:28 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[14-Jun-2016 18:12:28 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[17-Jun-2016 10:04:12 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[17-Jun-2016 10:04:12 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[21-Jun-2016 16:38:19 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[21-Jun-2016 16:38:19 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[22-Jun-2016 12:53:50 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[22-Jun-2016 12:53:50 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[23-Jun-2016 10:26:26 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[23-Jun-2016 10:26:26 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[24-Jun-2016 21:29:08 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[24-Jun-2016 21:29:08 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[28-Jun-2016 16:37:22 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[28-Jun-2016 16:37:22 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[29-Jun-2016 16:25:50 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[29-Jun-2016 16:25:50 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[29-Jun-2016 17:19:51 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[29-Jun-2016 17:19:51 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[30-Jun-2016 15:40:13 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[30-Jun-2016 15:40:13 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[01-Jul-2016 02:57:29 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[01-Jul-2016 02:57:29 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[01-Jul-2016 16:04:02 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[01-Jul-2016 16:04:02 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[01-Jul-2016 16:04:04 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[01-Jul-2016 16:04:04 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[03-Jul-2016 10:28:33 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[03-Jul-2016 10:28:33 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[06-Jul-2016 09:41:17 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[06-Jul-2016 09:41:17 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[07-Jul-2016 10:05:52 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[07-Jul-2016 10:05:52 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[08-Jul-2016 09:20:43 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[08-Jul-2016 09:20:43 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[08-Jul-2016 18:10:04 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[08-Jul-2016 18:10:04 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[11-Jul-2016 10:21:58 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[11-Jul-2016 10:21:58 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[13-Jul-2016 20:13:13 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[13-Jul-2016 20:13:13 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[15-Jul-2016 12:44:25 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[15-Jul-2016 12:44:25 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[15-Jul-2016 13:03:37 America/Santiago] PHP Warning:  POST Content-Length of 25575598 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[15-Jul-2016 13:04:46 America/Santiago] PHP Warning:  POST Content-Length of 25575586 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[16-Jul-2016 21:53:44 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[16-Jul-2016 21:53:44 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[18-Jul-2016 18:19:03 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[18-Jul-2016 18:19:03 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[18-Jul-2016 18:19:04 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[18-Jul-2016 18:19:04 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[19-Jul-2016 13:45:52 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[19-Jul-2016 13:45:52 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[19-Jul-2016 13:53:06 America/Santiago] PHP Warning:  Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini. in Unknown on line 0
+[20-Jul-2016 08:30:02 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[20-Jul-2016 08:30:02 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[20-Jul-2016 16:32:25 America/Santiago] PHP Notice:  Undefined index: region in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 3
+[20-Jul-2016 16:32:25 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/consolidacion_grabasubidasigfe.php on line 4
+[21-Jul-2016 08:10:13 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[21-Jul-2016 08:10:13 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[21-Jul-2016 12:38:47 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[21-Jul-2016 12:38:47 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[21-Jul-2016 12:38:49 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[21-Jul-2016 12:38:49 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[21-Jul-2016 12:38:51 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[21-Jul-2016 12:38:51 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
+[21-Jul-2016 12:38:53 America/Santiago] PHP Notice:  Undefined index: depto in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 3
+[21-Jul-2016 12:38:53 America/Santiago] PHP Notice:  Undefined index: nom_user in /home/cae12628/public_html/sistemas/seguimientos/sitio2/argedo_listafuncionario.php on line 4
