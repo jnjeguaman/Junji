@@ -1,0 +1,2 @@
+
+// Global user functions

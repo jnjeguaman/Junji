@@ -1,0 +1,85 @@
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.Estilo1 {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 10px;
+	color: #003063;
+	text-align: left;
+}
+.Estilo1b {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 10px;
+	color: #003063;
+	text-align: right;
+}
+.Estilo2 {
+	font-family: Verdana;
+	font-size: 10px;
+	text-align: left;
+}
+.Estilo3 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.link {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #00659C;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+.link:hover {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.Estilo4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+.Estilo5 {
+	font-family: Verdana;
+	font-size: 10px;
+	text-align: center;
+}
+.formularios1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bolder;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #333333;
+	text-decoration: none;
+	background-color: #CCCCCC;
+	border: medium groove #FFFFFF;
+}
+.formularios2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #666666;
+	border: thin none #6666CC;
+	cursor: text;
+}
