@@ -15,7 +15,7 @@ $periodoInicio = 2014;
 $periodoTermino = date("Y");
 $regiones = getRegiones2();
 
-$documentos = getDocumentosDTE(61,$regionSession);
+$documentos = getDocumentosDTE(61,$regionSession,$periodo);
 ?>
 
 <div class="panel panel-dark">

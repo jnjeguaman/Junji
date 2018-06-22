@@ -16,12 +16,13 @@ header('Content-Type: text/html; charset=ISO-8859-1');
 //$dbh5=mysql_connect ("localhost", "ejecucion", "passpass") or die ('I cannot connect to the database because: ' . mysql_error());
 //mysql_select_db ("ejecucion2",$dbh5);
 
-$dbh6=mysql_connect ("localhost", "inventario", "inventario.") or die ('I cannot connect to the database because: ' . mysql_error());
+//$dbh6=mysql_connect ("localhost", "inventario", "inventario.") or die ('I cannot connect to the database because: ' . mysql_error());
+$dbh6=mysql_connect ("192.168.100.237", "admin", "Hol@1234") or die ('I cannot connect to the database because: ' . mysql_error());
 mysql_select_db ("junji_inventario",$dbh6);
 
 
-
-$dbh=mysql_connect ("localhost", "segfac", "segfac.") or die ('I cannot connect to the database because: ' . mysql_error());
+//$dbh=mysql_connect ("localhost", "segfac", "segfac.") or die ('I cannot connect to the database because: ' . mysql_error());
+$dbh=mysql_connect ("192.168.100.237", "admin", "Hol@1234") or die ('I cannot connect to the database because: ' . mysql_error());
 mysql_select_db ("junji_segfac",$dbh);
 
 $programas = array();

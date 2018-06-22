@@ -15,107 +15,6 @@ $date_in=date("d-m-Y");
 <title>CONTABILIDAD</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-.Estilo1 {
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 10px;
-	color: #003063;
-	text-align: left;
-}
-.Estilo1c {
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 8px;
-	color: #003063;
-	text-align: right;
-}
-.Estilo1d {
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 10px;
-	color: #003063;
-	text-align: right;
-}
-.Estilo2 {
-	font-family: Verdana;
-	font-size: 10px;
-	text-align: left;
-}
-.Estilo2b {
-	font-family: Verdana;
-	font-size: 9px;
-	text-align: left;
-}
-.Estilo1cverde {
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 8px;
-	color: #009900;
-	text-align: right;
-}
-.Estilo1camarrillo {
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 8px;
-	color: #CCCC00;
-	text-align: right;
-}
-.Estilo1crojo {
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 8px;
-	color: #CC0000;
-	text-align: right;
-}
-.Estilo1crojoc {
-	font-family: Verdana;
-	font-weight: bold;
-	font-size: 12px;
-	color: #CC0000;
-	text-align: center;
-}
-.link {
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-	color: #00659C;
-	text-decoration:none;
-	text-transform:uppercase;
-}
-.link:over {
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	color: #0000cc;
-	text-decoration:none;
-	text-transform:uppercase;
-}
-.Estilo4 {
-	font-size: 10px;
-	font-weight: bold;
-}
-.Estilo7 {font-family: Geneva, Arial, Helvetica, sans-serif;
-font-size: 14px;
-font-weight: bold;
-text-align: center; }
-
-}
-.Estilo8 {font-family: Geneva, Arial, Helvetica, sans-serif; 
-font-size: 10px; font-weight: bold; text-align: left; 
-color: #009900;}
-
--->
-</style>
-
-
-
 </head>
 <!-- calendar stylesheet -->
   <link rel="stylesheet" type="text/css" media="all" href="librerias/calendar-win2k-cold-1.css" title="win2k-cold-1" />
@@ -563,8 +462,8 @@ Informes<br><br>
 <table width="488" border="1" cellspacing="0" cellpadding="0">
    <tr>
       <td  valign="top" class="Estilo1"> Mes  </td>
-      <td  valign="top" class="Estilo1"> Año  </td>
-      <td  valign="top" class="Estilo1"> Conciliación </td>
+      <td  valign="top" class="Estilo1"> Aï¿½o  </td>
+      <td  valign="top" class="Estilo1"> Conciliaciï¿½n </td>
       <td  valign="top" class="Estilo1"> Anexos1 </td>
       <td  valign="top" class="Estilo1"> Anexos2 </td>
       <td  valign="top" class="Estilo1"> Subir PDF</td>

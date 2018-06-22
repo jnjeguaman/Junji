@@ -462,7 +462,7 @@ if($action == 1)
 								// image: 'images/logo.png',
 								sticky: false,
 								time: ''
-							});
+							});							
 					}
 				},
 				complete : function (){

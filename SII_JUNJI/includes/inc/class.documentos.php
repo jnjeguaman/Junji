@@ -103,6 +103,7 @@ class Documentos
 			}
 
 			$query = "SELECT * FROM sii_dte a INNER JOIN sii_cotizacion b ON b.cotizacion_id = a.dte_cotizacion_id INNER JOIN sii_cliente c ON c.cliente_id = b.cotizacion_cliente_id INNER JOIN sii_dcto d on d.dcto_codigo = a.dte_dcto_id WHERE a.dte_estado = 0 AND a.dte_dcto_id = ? ".$where." AND YEAR(dte_fecha) = ".$periodo[0]." AND MONTH(dte_fecha) = ".$periodo[1]." ORDER BY dte_id DESC";
+			
 			$stmt = $objDbConnect->getConnection()->prepare($query);
 			
 			if($stmt)

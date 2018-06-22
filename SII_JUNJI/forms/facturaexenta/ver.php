@@ -116,7 +116,7 @@ $documentos = getDocumentosDTE(34,$regionSession,$periodo);
                     <td><?php echo $value["cliente_empresa"] ?></td>
                     <td><?php echo $value["dte_fecha"] ?></td>
                     <td>$<?php echo number_format($value["dte_total"],0,".",".") ?></td>
-                    <td><a href="<?php echo $value["dte_ruta"].$value["dte_archivo"] ?>.xml" target="_blank">XML</td>
+                    <td><a href="../sistemas/archivos/SII/<?php echo $value["dte_ruta"].$value["dte_archivo"] ?>.xml" target="_blank">XML</td>
                     <td><a href="documento.php?dte_id=<?php echo $value["dte_id"] ?>" target="_blank">PDF</td>
                     <td><?php echo $value["dte_estado_upload"] ?></td>
                     <td>

@@ -13,7 +13,7 @@ if ($mesanterior==0) {
 }
 
      $sql=" select max(resu_id), resu_monto from concilia_resumen where resu_mesp=$mesp22-1 and resu_annop='$annop22' and resu_region='$regionsession' and resu_numero='$numero' and (resu_descripcion='Saldo anterior' or resu_descripcion='Saldo disponible' )  group by resu_id ";
- //    echo $sql."<br><br>";
+     echo $sql."<br><br>";
      $res2 = mysql_query($sql);
      $cont=1;
      $row2 = mysql_fetch_array($res2);
@@ -21,7 +21,7 @@ if ($mesanterior==0) {
 
 //-----------  ingreso del mes
      $sql=" select sum(sigfe_abono) as totalabono, sum(sigfe_cargo) as totalcargo from concilia_sigfe where sigfe_mesp='$mesp' and sigfe_annop='$annop' and sigfe_region='$regionsession' and sigfe_numero='$numero'";
-//     echo $sql;
+     echo $sql."<br><br>";
      $res2 = mysql_query($sql);
      $cont=1;
      $row2 = mysql_fetch_array($res2);
@@ -30,7 +30,7 @@ if ($mesanterior==0) {
 
 //-----------  girados y no cobrados.
       $sql=" select sum(sigfe_abono) as totalabono2 from concilia_sigfe where sigfe_estado='1' and sigfe_numero='$numero' and sigfe_region='$regionsession'  order by sigfe_fecha";
-//     echo $sql;
+     echo $sql."<br><br>";
      $res2 = mysql_query($sql);
      $cont=1;
      $row2 = mysql_fetch_array($res2);
@@ -38,7 +38,7 @@ if ($mesanterior==0) {
 
 // cargos no reconocidos por el banco es negativo
       $sql=" select sum(sigfe_cargo) as totalabono2 from concilia_sigfe where sigfe_estado='1' and sigfe_numero='$numero' and sigfe_region='$regionsession'  order by sigfe_fecha";
-//     echo $sql;
+     echo $sql."<br><br>";
      $res2 = mysql_query($sql);
      $cont=1;
      $row2 = mysql_fetch_array($res2);
@@ -48,7 +48,7 @@ if ($mesanterior==0) {
 // cargos no reconocidos por la contabilidad
       $sql=" select sum(carto_cargo) as totalacartocargo from concilia_cartola where carto_estado='1' and carto_numero='$numero' and carto_region='$regionsession'  order by carto_fecha";
 
-//     echo $sql;
+     echo $sql."<br><br>";
      $res2 = mysql_query($sql);
      $cont=1;
      $row2 = mysql_fetch_array($res2);
@@ -57,7 +57,7 @@ if ($mesanterior==0) {
 
 // Abonos no reconocidos por la contabilidad
       $sql=" select sum(carto_abono) as totalacartoabono from concilia_cartola where carto_estado='1' and carto_numero='$numero' and carto_region='$regionsession'  order by carto_fecha";
-//     echo $sql;
+     echo $sql."<br><br>";
      $res2 = mysql_query($sql);
      $cont=1;
      $row2 = mysql_fetch_array($res2);

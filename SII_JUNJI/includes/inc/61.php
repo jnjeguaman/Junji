@@ -348,7 +348,7 @@ class NotaCredito
 	{
 		$objCAF = new CAF($this->tipo_dcto,$this->siiDatos["emisor_region"]);
 		$objEmpresa = new Empresa();
-		$empresa = $objEmpresa->getEmpresa();
+		$empresa = $objEmpresa->getEmpresa($this->siiDatos["emisor_region"]);
 
 		$objCotizacion = new Cotizacion();
 		$cotizacion = $objCotizacion->getCotizacion($this->cotizacion);
@@ -411,7 +411,8 @@ class NotaCredito
 						{
 							$objDTE->nuevoDTE2($this->referencia,$this->tipo_dcto,$this->folio,$res,$this->siiDatos["cliente_id"],$this->cotizacion,$this->siiDatos);
 							$objCAF->actualizarFolio($this->folio,$this->tipo_dcto,$this->siiDatos["emisor_region"]);
-							return array("Respuesta" => true, "Mensaje" => $res);
+							
+							return array("Respuesta" => true, "Mensaje" =>"Su nota de crédito a sido generada exitosamente.","res"=>$res);
 						}else{
 							return array("Respuesta" => false, $res);
 						}
