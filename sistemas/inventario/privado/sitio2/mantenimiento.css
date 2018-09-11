@@ -1,0 +1,25 @@
+img.logo{
+	width: 30%;
+	height: 30%;
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+p.inedis{
+	font-size: 3em;
+}
+
+p.glosa{
+	font-size: 1.5em;
+	margin-top: -30px;
+}
+
+p.mantenimiento{
+	font-size: 3em;
+}

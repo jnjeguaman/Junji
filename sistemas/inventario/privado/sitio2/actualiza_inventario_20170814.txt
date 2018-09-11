@@ -1,0 +1,1 @@
+2017-08-14 12:32:43,UPDATE acti_inventario SET inv_gd = '6229', inv_direccion = '13119006' WHERE inv_region = '13' AND inv_codigo = 13115144,msalazar,6229,4662792017-08-14 12:32:45,UPDATE acti_inventario SET inv_gd = '6229', inv_direccion = '13119006' WHERE inv_region = '13' AND inv_codigo = 13115145,msalazar,6229,466279

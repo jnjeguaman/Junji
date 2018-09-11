@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+	width: 100%;
+	margin: auto;
+	padding: 0;
+	font-family: "Slabo 27px";
+	/*font-family: "Raleway";*/
+	/*font-family: sans-serif;*/
+}
+
+#texto1{
+font-size: 1em;
+font-weight: bold;
+}
+#texto2{
+font-size: 0.9em;
+margin-top: -1em;
+font-weight: bold;
+}
+.contenedor{
+	width: 100%;
+
+}
+
+/*ENCABEZADO*/
+
+#encabezado{
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;	
+}
+
+#encabezado img{
+	/*width: 60%;*/
+	height: 150px;
+}
+
+#encabezado li{
+	list-style: none;
+	font-size: .6em;
+}
+
+/*DATOS*/
+.datos
+{
+	margin-top: 2em;
+	text-align: justify;
+}
+.datos > table{
+	width: 100%;
+	font-size: .7em;
+	border: 1px solid;
+}
+
+
+/*RESUMEN*/
+.resumenGuias{
+	margin-top: 2em;
+	text-align: left;
+	font-size: .7em;
+
+}
+.resumenGuias > table{
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	border-collapse: collapse;
+}
+
+#resumenGuias td{
+	line-height: 15px;
+}
+
+/*FOOTER*/
+.footer{
+font-size: .6em;
+text-align: center
+}
+
+.footer > table{
+width: 100%;
+margin: 9em auto;
+}
+
+.fondo1{
+	background: #F2F2F2;
+}
+.fondo2{
+	background: #ccc;
+}

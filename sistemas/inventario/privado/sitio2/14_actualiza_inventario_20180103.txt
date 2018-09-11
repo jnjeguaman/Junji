@@ -1,0 +1,1 @@
+2018-01-03 11:29:47;UPDATE acti_inventario SET inv_gd = '25262', inv_direccion = '14101036' WHERE inv_region = '14' AND inv_codigo = 14005022;dborneck;25262;487426;141010362018-01-03 11:29:50;UPDATE acti_inventario SET inv_gd = '25262', inv_direccion = '14101036' WHERE inv_region = '14' AND inv_codigo = 14005024;dborneck;25262;487426;14101036

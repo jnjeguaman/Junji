@@ -1,0 +1,145 @@
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5779
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5779
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5779
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5797
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5797
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5797
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5948
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5948
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5948
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5969
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5969
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5969
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5982
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5982
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5982
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 4868
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 4868
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 4868
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 6172
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 6172
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 6172
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 4720
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 4720
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 4720
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5891
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5891
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5891
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 6168
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 6168
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 6168
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5895
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5895
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5895
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5152
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5152
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5152
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5900
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5900
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5900
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5903
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5903
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5903
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5906
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5906
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5906
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5908
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5908
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5908
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5909
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5909
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5909
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5931
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5931
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5931
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5910
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5910
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5910
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5925
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5925
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5925
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5927
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5927
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5927
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5928
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5928
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5928
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 6169
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 6169
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 6169
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5868
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5868
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5868
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5953
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5953
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5953
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5861
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5861
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5861
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 5867
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 5867
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 5867
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 6020
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 6020
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 6020
+-------------------------------------
+
+UPDATE bode_ingreso SET ing_clasificacion = 0 WHERE ing_id = 6021
+UPDATE bode_detingreso SET ding_clasificacion = 2 WHERE ding_ing_id = 6021
+UPDATE acti_compra_temporal SET compra_clasificacion = 0, compra_visible = 0 WHERE compra_ing_id = 6021
+-------------------------------------
+

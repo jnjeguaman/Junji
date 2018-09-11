@@ -1,0 +1,270 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.Estilo1 {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 11px;
+	color: #003063;
+	text-align: left;
+}
+.Estilo1Blanco {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 11px;
+	color: #003063;
+	text-align: left;
+	background-color:#FAFAFA;
+}
+
+.Estilo1rojo {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 12px;
+	color: #FF0000;
+	text-align: center;
+}
+
+.Estilo1m {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #003063;
+	text-align: left;
+}
+.Estilo1mr {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #003063;
+	text-align: right;
+}
+.Estilo1mc {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #003063;
+	text-align: center;
+}
+.Estilo1mcblanco {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #003063;
+	text-align: center;
+	background-color:#FAFAFA;
+
+}
+
+.Estilo1mcRojo {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #FF0000;
+	text-align: center;
+}
+.Estilo1mcblancoRojo {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #FF0000;
+	text-align: center;
+	background-color:#FAFAFA;
+
+}
+
+
+.Estilo1titulo {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 22px;
+	color: #DF013A;
+	text-align: center;
+}
+.Estilo2titulo {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 12px;
+	color: #DF013A;
+	text-align: center;
+}
+
+.Estilo1b {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #003063;
+	text-align: center;
+}
+.Estilo1c {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 12px;
+	color: #003063;
+	text-align: center;
+}
+.Estilo2 {
+	font-family: Verdana;
+	font-size: 11px;
+	text-align: left;
+}
+.Estilo2rojo {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: left;
+	color: #FF0000;
+
+}
+.Estilo2mc {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 10px;
+	color: #003063;
+	text-align: left;
+	text-transform:uppercase;	
+}
+.Estilo2mcblanco {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 10px;
+	color: #003063;
+	text-align: left;
+	background-color:#FAFAFA;
+	text-transform:uppercase;	
+
+}
+
+
+.Estilo2c {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 16px;
+	color: #003063;
+	text-align: center;
+}
+.Estilo2b {
+	font-family: Verdana;
+	font-size: 9px;
+	text-align: left;
+}
+.link {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #00659C;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.link:over {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #0000cc;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.linkB {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #00659C;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.linkB:over {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #0000cc;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+
+.Estilo4 {
+	font-size: 10px;
+	font-weight: bold;
+}
+.Estilo7 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.button {
+	background: #088A4B;
+	border-top: 1px solid #96D1F8;
+	color: WHITE;
+	font-weight:bold;  
+	font-size: 13px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	padding: 3px 26px;
+	text-decoration: none;
+	vertical-align: middle; 
+	
+}
+.button:hover {
+	background: #28597A;
+	border-top-color: #28597A;
+	color: #bab337;
+}
+.button:active {
+	background: #719BB8;
+	border-top-color: #719BB8;
+}
+
+.menu_junji{
+	background: #28597A;
+
+	border-top-color: #28597A;
+
+}
+
+a{
+	text-decoration: none;
+	text-transform: none;
+}
+
+.trh:hover{
+	background-color: chartreuse;
+}
+
+.Estilo1mcR {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 8px;
+	color: #003063;
+	text-align: right;
+}
+
+.bloqueado{
+	background-color: rgb(235, 235, 235)
+}
+
+	.active > a {
+		color:white;
+	}
+	.active{
+		background-color: #c3c3c3;
+		border-radius: 10px;
+	}
+
+	.pagination {
+		margin: auto auto;
+	}
+
+	.pagination > li {
+		display: inline-block;
+		padding: 5px;
+		font-size: 10px;
+		font-weight: bold;
+		text-align: center;
+		font-family: sans-serif;
+	}
+
+	.pagination > li > a{
+		color: black;
+	}

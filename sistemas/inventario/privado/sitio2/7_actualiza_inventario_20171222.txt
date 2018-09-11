@@ -1,0 +1,1 @@
+2017-12-22 10:58:41;UPDATE acti_inventario SET inv_gd = '32575', inv_direccion = '1 NORTE #963 301 ' WHERE inv_region = '7' AND inv_codigo = 7025781;eazuniga;32575;485907;1 NORTE #963 301 2017-12-22 10:58:44;UPDATE acti_inventario SET inv_gd = '32575', inv_direccion = '1 NORTE #963 301 ' WHERE inv_region = '7' AND inv_codigo = 7025771;eazuniga;32575;485907;1 NORTE #963 301 

@@ -17,7 +17,9 @@ use BigFish\PDF417\Renderers\ImageRenderer;
 use BigFish\PDF417\Renderers\SvgRenderer;
 
 $regionSession = (!isset($_SESSION["sii"]["usuario_region"])) ? $_GET["regionSession"] : $_SESSION["sii"]["usuario_region"];
+echo $regionSession;
 $empresa = getEmpresa($regionSession);
+
 $html = "";
 $htmlnocedible = "";
 
@@ -31,6 +33,10 @@ $logo = array(
 $logo = $logo[0];
 
 $detalleDTE = getDetalleDTE($dte_id);
+echo "<pre>";
+var_dump($detalleDTE);
+echo "<pre>";
+exit();
 $tipo = $detalleDTE[1]["dte_dcto_id"];
 $archivoXML = "../sistemas/archivos/SII/".$detalleDTE[1]["dte_ruta"].$detalleDTE[1]["dte_archivo"].".xml";
 

@@ -1,0 +1,1 @@
+2018-01-04 10:00:46;UPDATE acti_inventario SET inv_gd = '', inv_direccion = 'ALAMEDA 107' WHERE inv_region = '16' AND inv_codigo = 13111359;;;487820;ALAMEDA 1072018-01-04 10:00:48;UPDATE acti_inventario SET inv_gd = '', inv_direccion = 'ALAMEDA 107' WHERE inv_region = '16' AND inv_codigo = 13111362;;;487820;ALAMEDA 107

@@ -1,0 +1,214 @@
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   04/04/2016                    *
+**************************************************
+
+* SISTEMA DE ALERTA DE LA ORDEN DE COMPRA EN EL DASHBOARD
+* DESCARGA DE REPORTE EN EXCEL AL BUSCAR UN ARTICULO POR EL FILTRO "GUIA DE DESPACHO"
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   28/03/2016                    *
+**************************************************
+
+* AÑADIDO MODULO DE BUSQUEDA DE G/D ENVIADAS.
+* AÑADIDO FRACCIONAMIENTO DE PRODUCTOS A OTRA UBICACION CUANDO SUPERA LA CAPACIDAD DE ALMACENAMIENTO.
+* AÑADIDO CAMPO DE DESPLIEGUE DE CANTIDAD DE PRODUCTOS DESPACHADOS. FILTRO G/D EN ARTICULOS (DASHBOARD)
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   18/03/2016                    *
+**************************************************
+
+* ACTUALIZACIONES VARIAS
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   02/03/2016                    *
+**************************************************
+
+* TOMA DE INVENTARIO FILTRADO POR REGION.
+* AJUSTES FILTRADO POR REGION.
+* BAJAS FILTRADO POR REGION.
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   02/03/2016                    *
+**************************************************
+
+* CREADO LOG DE LOS AJUSTES A LOS PRODUCTOS.
+* TOMA DE INVENTARIO AÑADIDO FORMA : VISIBLE Y OCULTO.
+* AÑADIDA MATRIZ G/D
+* AÑADIDA A LAS CONSULTAS DE BUSQUEDA NO MOSTRAR LAS BAJAS.
+* AÑADIDO GENERAR G/D A LAS BAJAS.
+* AÑADIDO LIMITE DE MAXIMO DE 20 PRODUCTOS A LAS G/D.
+* AÑADIDO LIMITE DE MAXIMO DE 20 PRODUCTOS A LAS G/D DE BAJAS.
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   26/02/2016                    *
+**************************************************
+
+* AÑADIDO FILTRO DE BUSQUEDA EN ULTIMAS OC INGRESADAS.
+* AÑADIDO FILTRADO DE PRODUCTOS EN STOCK Y G/D REGIONES 16 Y 13.
+* IMPLEMENTACION (LOCAL) G/D MASIVO.
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   25/02/2016                    *
+**************************************************
+
+* AÑADIDO MODULO DE BAJAS
+* AÑADIDO MODULO DE AJUSTES
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   23/02/2016                    *
+**************************************************
+
+* ANULAR GUIA DE DESPACHO.
+* AÑADIDO LA UBICACION AL GENERAR UNA G/D.
+* DETALLE DE LA OC EN EL DASHBOARD (PDF).
+* MODULO MOVIMIENTOS (APROBACIONES, RECHAZOS, ALTAS, BAJAS, AJUSTES Y CONTENEDORES).
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   16/02/2016                    *
+**************************************************
+
+* AÑADIDO UNIDAD DE MEDIDA.
+* AÑADIDO STOCK REGIONAL.
+* AÑADIDO FILTRO DE GUIA EN ARTICULOS (DASHBOARD).
+* VINCULADO REGION METROPOLITANA CON DIRNAC EN ORDENES DE COMPRA (DASHBOARD).
+* SALTO DE PAGINA PLANILLA MURAL DE INVENTARIO.
+* ARREGLADO LAS ALTAS.
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   15/02/2016                    *
+**************************************************
+
+* ARREGLADA MOSTRAR GUIA DE DESPACHO.
+* MOSTRAR FECHA DE EMISION IGUAL QUE FECHA DE RESERVA EN GUIA DE DESPACHO.
+* DASHBOARD VER_OC_DET NO MUESTRA LAS FECHAS 0000-00-00.
+* SUBIDO RECHAZO DE GUIAS.
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   14/02/2016                    *
+**************************************************
+
+* ARREGLADO VER LOS DOCUMENTOS ADJUNTOS EN DASHBOARD.
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   10/02/2016                    *
+**************************************************
+
+* CAMBIADAS LAS CONSULTAS DE BODE_STOCK ACORDE A LA ANULACION DE LA OC
+* CAMBIADAS LAS CONSULTAS DE GUIAS DE DESPACHO (VER Y AGREGAR PRODUCTOS) A LA ANULACION DE LA OC
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   10/02/2016                    *
+**************************************************
+
+* ARREGLADO LA GENERACION DE GUIAS DE DESPACHO.
+* AÑADIDO EXPORTAR A EXCEL EN STOCK.
+* AÑADIDO GENERACION DE GUIAS DE RECHAZO DE PRODUCTOS.
+* AÑADIDO TIPO DE CAMBIO UF.
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   08/02/2016                    *
+**************************************************
+
+* MOSTRAR OBSERVACION EN GUIA DE DESPACHO.
+* PERFILAMIENTO 41 Y 42 RESPECTIVAMENTE.
+* CAMBIADO USUARIO ID POR NOM_USER BODE_ULTIMASOC2.PHP.
+* SUBIR DOCUMENTO EN LA RECEPCION CONFORME.
+* VER DOCUMENTOS ADJUNTOS EN DASHBOARD.
+* SUBIR ARCHIVO POR ID DE INGRESO.
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   06/02/2016                    *
+**************************************************
+
+* RECEPCION TECNICA VOLVER A CERRAR GUIA.
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   04/02/2016                    *
+**************************************************
+
+* EDITADAS TODAS LAS CONSULTAS DE BODE_STOCK.
+* DESCARGAR GUIA DE DESPACHO EN EL DASHBOARD.
+* EDITADO HTML DE RECEPCION TECNICA.
+* EDITADO HTML DE RECEPCION CONFORME.
+* OCULTAR BOTONES EN INGRESO, RECEPCION TECNICA Y RECEPCION CONFORME.
+* VALIDADO EL CERRAR GUIA DESPACHO, DEBE HABER ALMENOS 1 PRODUCTO AGREGADO.
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   03/02/2016                    *
+**************************************************
+
+* NUEVA CONSULTA SQL EN BODE_STOCK.PHP.
+* NUEVA CONSULTA SQL EN DESPACHO.
+* AGREGADO CAMPO OC_NULO PARA LAS GUIAS DE DESPACHO.
+* VALIDACION DE ORDEN DE COMPRA "EN PROCESO".
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   02/02/2016                    *
+**************************************************
+
+* MOSTRAR EL STOCK DE BODEGA EN EL DASHBOARD (CANTIDAD FINAL).
+* ARREGLADO ACTUALIZACION DE RECEPCION TECNICA [NUMERO DE GUIA].
+* CREACION DE MODULO DE CONTENEDORES.
+- LISTAR CONTENEDOR(ES).
+- EDITAR CONTENEDOR.
+- AGREGAR NUEVO CONTENEDOR.
+* ARREGLADA CONSULTA SQL EN BODE_STOCK.PHP.
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - BODEGA            *
+*				   28/01/2016                    *
+**************************************************
+
+* ARREGLADO PROBLEMA DE GENERAR PDF CON LAS RECEPCIONES TECNICAS
+
+
+
+**************************************************
+*		ACTUALIZACION INEDIS - INVENTARIO        *
+*				   26/01/2016                    *
+**************************************************
+
+* AGREGADO LA VALIDACION DEL RUT DEL PROVEEDOR EN EL SISTEMA.
+* VALIDADO NUEVO PRODUCTO SI EL ID YA FUE PROCESADO.
+* ARREGLO EN LA BUSQUEDA DE BIENES (CONSULTA).
+* VALIDADO INGRESO DE ORDEN DE COMPRA EN LA RECEPCION.
+* VALIDADO EL INGRESO DE LA ORDEN DE COMPRA POR REGION.
+* AÑADIDA VALIDACION PARA NO INGRESAR Ñ O ACENTOS COMO RESPONSABLE (FICHA DEL PRODUCTO) O
+  SOLICITANTE (NUEVO REQUERIMIENTO).
+* ARREGLADA LA CONSULTA EN INVENTARIO (MENU DE OPCIONES).
+* AÑADIDO REGISTRO DE QUIEN REALIZA CAMBIOS : 
+  - NUEVA COMPRA.
+  - ACTUALIZACION DEL NUMERO DE SOLICITUD.
+  - ACTUALIZACION DE LA ORDEN DE COMPRA.
+  - INGRESO A INVENTARIO.
+  - MODIFICACION DE LA FICHA DEL PRODUCTO.
+ * ARREGLADO PROBLEMA CON EL INGRESO DE PRODUCTOS EN LAS GUIAS DE DESPACHO.
+ * RUT Y DIGITO VERIFICADOR EN CAMPOS APARTES DE LOS PROVEEDORES.
+ * MOSTRAR RESPONSABLE ANTERIOR EN EL REGISTRO DE GUIAS.
+ * AÑADIDOS LA DESCRIPCION DEL SUBTITULO 29.
+ * VALIDACION DE ORDEN DE COMPRA "ACEPTADA" Y "REMOVIDA".

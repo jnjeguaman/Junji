@@ -1,0 +1,1 @@
+2017-12-28 11:19:36;UPDATE acti_inventario SET inv_gd = '8255', inv_direccion = 'RIQUELME #395' WHERE inv_region = '11' AND inv_codigo = 16021824;jchacana;8255;486725;RIQUELME #3952017-12-28 11:19:38;UPDATE acti_inventario SET inv_gd = '8255', inv_direccion = 'RIQUELME #395' WHERE inv_region = '11' AND inv_codigo = 16022204;jchacana;8255;486725;RIQUELME #395

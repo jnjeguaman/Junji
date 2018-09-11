@@ -1,0 +1,1 @@
+2017-10-18 11:55:38;UPDATE acti_inventario SET inv_gd = '27061', inv_direccion = '2104001' WHERE inv_region = '2' AND inv_codigo = 2015880;vsaldivia;27061;474710;21040012017-10-18 11:55:40;UPDATE acti_inventario SET inv_gd = '27061', inv_direccion = '2104001' WHERE inv_region = '2' AND inv_codigo = 2015881;vsaldivia;27061;474710;2104001
