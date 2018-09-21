@@ -1,0 +1,27 @@
+IMG.ms-rteCustom-MarcoDeImagen {
+	BORDER-RIGHT: #0000ff 5px double; PADDING-RIGHT: 4px; BORDER-TOP: #0000ff 5px double; PADDING-LEFT: 6px; PADDING-BOTTOM: 1px; MARGIN-LEFT: 14px; BORDER-LEFT: #0000ff 5px double; COLOR: #ff0000; PADDING-TOP: 1px; BORDER-BOTTOM: #0000ff 5px double; BACKGROUND-COLOR: #9fc2f1; TEXT-ALIGN: center
+}
+A.ms-rteCustom-EstiloDeVínculo:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #003399; FONT-STYLE: normal; FONT-FAMILY: Verdana; FONT-VARIANT: normal
+}
+A.ms-rteCustom-EstiloDeVínculo:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #008080; FONT-STYLE: normal; FONT-FAMILY: Verdana; FONT-VARIANT: normal
+}
+A.ms-rteCustom-EstiloDeVínculo:hover {
+	FONT: 10pt Verdana, Arial, Helvetica; COLOR: red
+}
+OL.ms-rteCustom-ListaConNúmerosRomanos {
+	MARGIN-TOP: 1px; PADDING-LEFT: 10px; FONT-SIZE: 10pt; MARGIN-LEFT: 30px; TEXT-TRANSFORM: capitalize; COLOR: #595959; TEXT-INDENT: 0px; MARGIN-RIGHT: 10px; FONT-FAMILY: Tahoma; LIST-STYLE-TYPE: upper-roman; TEXT-ALIGN: left
+}
+UL.ms-rteCustom-ListaConViñetasCuadradas {
+	PADDING-LEFT: 10px; FONT-SIZE: 10pt; MARGIN: 10px 10px 10px 15px; WORD-SPACING: 0px; COLOR: #595959; TEXT-INDENT: 0px; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma; LIST-STYLE-TYPE: square; TEXT-ALIGN: left
+}
+.ms-rteCustom-TítuloDeArtículo {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; TEXT-TRANSFORM: capitalize; COLOR: #015263; FONT-FAMILY: Arial
+}
+.ms-rteCustom-AutorDeArtículo {
+	FONT-SIZE: 10pt; COLOR: #7f7f7f; FONT-STYLE: italic; FONT-FAMILY: Arial
+}
+.ms-rteCustom-SubtítuloDeArtículo {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #01778f; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

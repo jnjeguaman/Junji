@@ -1,0 +1,31 @@
+[10-Jan-2016 21:54:31 America/Argentina/Buenos_Aires] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'docdpp'@'localhost' (using password: YES) in /home/cae12628/public_html/sistemas/argedo/conex.php on line 20
+[10-Jan-2016 21:54:39 America/Argentina/Buenos_Aires] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'docdpp'@'localhost' (using password: YES) in /home/cae12628/public_html/sistemas/argedo/conex.php on line 20
+[10-Jan-2016 21:56:53 America/Argentina/Buenos_Aires] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listareg2.php on line 428
+[31-Mar-2016 12:35:02 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 153
+[31-Mar-2016 12:35:02 America/Santiago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 746
+[31-Mar-2016 12:35:02 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 754
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 565
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 570
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 565
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 570
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 565
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 570
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 565
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 570
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 565
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 570
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 565
+[03-Apr-2016 12:44:55 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 570
+[04-Apr-2016 18:26:28 America/Santiago] PHP Warning:  mysql_query() expects parameter 2 to be resource, null given in /home/cae12628/public_html/sistemas/argedo/docmaster3.php on line 622
+[07-Apr-2016 10:51:38 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/ficha2.php on line 724
+[07-Apr-2016 10:52:30 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 153
+[07-Apr-2016 10:52:30 America/Santiago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 746
+[07-Apr-2016 10:52:30 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 754
+[14-Apr-2016 10:23:18 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/ficha2.php on line 724
+[14-Apr-2016 10:26:59 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 153
+[14-Apr-2016 10:26:59 America/Santiago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 746
+[14-Apr-2016 10:26:59 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc3todo.php on line 754
+[14-Apr-2016 10:30:43 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 133
+[14-Apr-2016 10:30:43 America/Santiago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 541
+[14-Apr-2016 10:30:43 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/listadoc2.php on line 550
+[14-Apr-2016 11:44:12 America/Santiago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/cae12628/public_html/sistemas/argedo/ficha2.php on line 724
