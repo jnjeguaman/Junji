@@ -1,6 +1,6 @@
 <!-- SIDEBAR !-->
 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-<?php if ($_SESSION["admin"]["admin_perfil"] == 1 || $_SESSION["admin"]["admin_perfil"] == 2): ?>
+<?php if ($_SESSION["admin"]["admin_perfil"] == 1 || $_SESSION["admin"]["admin_perfil"] == 2 ||  $_SESSION["admin"]["admin_perfil"] == 3): ?>
 	
 	<!-- SECCION 1 !-->
 	<div class="menu_section">
@@ -33,12 +33,16 @@
 			</li>
 			<?php endif ?>
 			
-			<?php if ($_SESSION["admin"]["admin_perfil"] == 1): ?>
+			<?php if ($_SESSION["admin"]["admin_perfil"] == 1 || $_SESSION["admin"]["admin_perfil"] == 3): ?>
 			<li><a><i class="fa fa-home"></i> CLASIFICACIÓN <span class="fa fa-chevron-down"></span></a>
 				<ul class="nav child_menu" style="display: none">
+					<?php if ($_SESSION["admin"]["admin_perfil"] == 1 || $_SESSION["admin"]["admin_perfil"] == 3): ?>
 					<li><a href="?page=clasificacion&action=reclasificar">RECLASIFICAR</a></li>
+					<?php endif ?>
+					<?php if ($_SESSION["admin"]["admin_perfil"] == 1): ?>
 					<li><a href="?page=clasificacion&action=region">CAMBIAR REGION</a></li>
 					<li><a href="?page=clasificacion&action=productos">CLASIFICAR PRODUCTOS</a></li>
+					<?php endif ?>
 				</ul>
 			</li>
 			<?php endif ?>
@@ -102,7 +106,7 @@
 			</li>
 			<?php endif ?>
 
-<?php if ($_SESSION["admin"]["admin_perfil"] == 1): ?>
+		<?php if ($_SESSION["admin"]["admin_perfil"] == 1): ?>
 			<li><a href="?page=encargados2"><i class="fa fa-users"></i> Encargados</a></li>
 			<?php endif ?>
 		</ul>
