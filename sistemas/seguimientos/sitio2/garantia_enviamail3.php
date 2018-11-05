@@ -231,7 +231,8 @@ while($row3 = mysql_fetch_array($res3))
   // if($row3["correo"] <>  '' && $row3["nombrecom"] <> '')
   // $mail->AddAddress($row3["correo"],utf8_encode($row3["nombrecom"]));
 }
-$mail->AddAddress("fvaras@pradi.cl","Freddy Varas");
+//$mail->AddAddress("fvaras@pradi.cl","Freddy Varas");
+$mail->AddAddress("eguaman@plataformagroup.cl","Edwin Guaman");
 // $mail->AddAddress("emarzan@junji.cl","Enzo Marzan");
 // $mail->AddAddress("jvillagra@junji.cl","Juan Villagra");
 // if ($mail1<>"") {

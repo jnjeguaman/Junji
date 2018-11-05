@@ -3,6 +3,7 @@ require_once("includes/functions.cliente.php");
 require_once("includes/functions.documentos.php");
 require_once("includes/functions.empresa.php");
 require_once("includes/functions.referencia.php");
+require_once("includes/functions.region.php");
 require_once("includes/inc/class.xml.php");
 extract($_GET);
 

@@ -34,226 +34,6 @@ $date_in2=date("Y-m-d");
 
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
 
-<style type="text/css">
-
-<!--
-
-body {
-
-	margin-left: 0px;
-
-	margin-top: 0px;
-
-	margin-right: 0px;
-
-	margin-bottom: 0px;
-
-}
-
-.Estilo1 {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 10px;
-
-	color: #003063;
-
-	text-align: left;
-
-}
-
-.Estilo1b {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 8px;
-
-	color: #003063;
-
-	text-align: center;
-
-    text-transform: uppercase;
-
-
-
-}
-
-.Estilo1c {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 8px;
-
-	color: #003063;
-
-	text-align: right;
-
-}
-
-.Estilo1d {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 10px;
-
-	color: #003063;
-
-	text-align: right;
-
-}
-
-.Estilo2 {
-
-	font-family: Verdana;
-
-	font-size: 10px;
-
-	text-align: left;
-
-}
-
-.Estilo2b {
-
-	font-family: Verdana;
-
-	font-size: 9px;
-
-	text-align: left;
-
-}
-
-.Estilo1cverde {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 8px;
-
-	color: #009900;
-
-	text-align: right;
-
-}
-
-.Estilo1camarrillo {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 8px;
-
-	color: #CCCC00;
-
-	text-align: right;
-
-}
-
-.Estilo1crojo {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 8px;
-
-	color: #CC0000;
-
-	text-align: right;
-
-}
-
-.Estilo1crojoc {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 12px;
-
-	color: #CC0000;
-
-	text-align: center;
-
-}
-
-.link {
-
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-
-	font-size: 10px;
-
-	font-weight: bold;
-
-	color: #00659C;
-
-	text-decoration:none;
-
-	text-transform:uppercase;
-
-}
-
-.link:over {
-
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-
-	font-size: 10px;
-
-	color: #0000cc;
-
-	text-decoration:none;
-
-	text-transform:uppercase;
-
-}
-
-.Estilo4 {
-
-	font-size: 10px;
-
-	font-weight: bold;
-
-}
-
-.Estilo7 {font-family: Geneva, Arial, Helvetica, sans-serif;
-
-font-size: 14px;
-
-font-weight: bold;
-
-text-align: center; }
-
-
-
-}
-
-.Estilo8 {font-family: Geneva, Arial, Helvetica, sans-serif; 
-
-font-size: 10px; font-weight: bold; text-align: left; 
-
-color: #009900;}
-
-
-
--->
-
-</style>
-
-
-
-
-
-
-
 </head>
 
 <script type="text/javascript" src="select_dependientesargedo.js"></script>
@@ -628,7 +408,7 @@ function valida() {
 
    if (document.form1.numero.value=='0' || document.form1.numero.value=='') {
 
-      alert ("Número Factura presenta problemas ");
+      alert ("Nï¿½mero Factura presenta problemas ");
 
       return false;
 
@@ -636,7 +416,7 @@ function valida() {
 
    if (document.form1.numero.value <= 0) {
 
-      alert ("Número Factura debe ser positivo ");
+      alert ("Nï¿½mero Factura debe ser positivo ");
 
       return false;
 
@@ -746,7 +526,7 @@ $folio=$_GET["folio"];
 
   if ($ti==1) {
 
-   $prefijo="RESOLUCIÓN EXENTA";
+   $prefijo="RESOLUCIï¿½N EXENTA";
 
 
 
@@ -754,7 +534,7 @@ $folio=$_GET["folio"];
 
   if ($ti==2) {
 
-   $prefijo="RESOLUCIÓN AFECTA";
+   $prefijo="RESOLUCIï¿½N AFECTA";
 
   }
 
@@ -970,7 +750,7 @@ if (isset($_GET["llave"]))
 
                          <tr>
 
-                             <td  valign="center" class="Estilo1">REGIÓN</td>
+                             <td  valign="center" class="Estilo1">REGIï¿½N</td>
 
                              <td class="Estilo1">
 
@@ -1258,7 +1038,7 @@ if ($documento==1 or $documento==2 or $documento==3 or $documento == 7) {
 
   if ($documento==1) {
 
-   $prefijo="RESOLUCIÓN EXENTA";
+   $prefijo="RESOLUCIï¿½N EXENTA";
 
 
 
@@ -1266,7 +1046,7 @@ if ($documento==1 or $documento==2 or $documento==3 or $documento == 7) {
 
   if ($documento==2) {
 
-   $prefijo="RESOLUCIÓN AFECTA";
+   $prefijo="RESOLUCIï¿½N AFECTA";
 
   }
 
@@ -1432,7 +1212,7 @@ if ($documento==5) {
 
 
 
-// echo $sql;
+echo $sql;
 
 $res3 = mysql_query($sql);
 

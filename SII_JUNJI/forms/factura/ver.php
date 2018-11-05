@@ -2,9 +2,121 @@
 require_once("includes/functions.documentos.php");
 require_once("includes/functions.referencia.php");
 $regionSession = $_SESSION["sii"]["usuario_region"];
-$documentos = getDocumentosDTE(33,$regionSession);
+$periodo = [
+    0 => (isset($_POST["periodo_annio"]) && $_POST["periodo_annio"] <> "") ? $_POST["periodo_annio"] : date("Y"),
+    1 => (isset($_POST["periodo_mes"]) && $_POST["periodo_mes"] <> "") ? $_POST["periodo_mes"] : date("m")
+];
+
+$periodo_annio = $periodo[0];
+$periodo_mes = $periodo[1];
+$regionConsulta = (isset($_POST["periodo_region"]) && $_POST["periodo_region"] <> "") ? $_POST["periodo_region"] : $_SESSION["sii"]["usuario_region"];
+
+$periodoInicio = 2014;
+$periodoTermino = date("Y");
+$regiones = getRegiones2();
+$documentos = getDocumentosDTE(33, $regionSession, $periodo);
 
 ?>
+<div class="panel panel-dark">
+
+<div class="panel-heading">
+    <h4 class="panel-title">CAMBIAR PERIODO Y REGION DE CONSULTA</h4>
+
+</div>
+<div class="panel-body">
+    <form action="?pagina=factura&ori=ver" method="POST">
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">AÑO <span class="asterisk">*</span></label>
+            <div class="col-sm-3">
+
+                <select class="form-control" name="periodo_annio" id="periodo_annio">
+                    <option value="">Seleccionar...</option>
+                    <?php for ($i = $periodoInicio; $i <= $periodoTermino; $i++) : ?>
+                    <option value="<?php echo $i ?>" <?php if ($periodo_annio == $i) {
+                                                        echo "selected";
+                                                    } ?>><?php echo $i ?></option>
+                    <?php endfor ?>                    
+                </select>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">MES <span class="asterisk">*</span></label>
+            <div class="col-sm-3">
+                <select class="form-control" name="periodo_mes" id="periodo_mes">
+                    <option value="">Seleccionar...</option>
+                    <option value="01" <?php if ($periodo_mes == "01") {
+                                            echo "selected";
+                                        } ?> >ENERO</option>
+                    <option value="02" <?php if ($periodo_mes == "02") {
+                                            echo "selected";
+                                        } ?> >FEBRERO</option>
+                    <option value="03" <?php if ($periodo_mes == "03") {
+                                            echo "selected";
+                                        } ?> >MARZO</option>
+                    <option value="04" <?php if ($periodo_mes == "04") {
+                                            echo "selected";
+                                        } ?> >ABRIL</option>
+                    <option value="05" <?php if ($periodo_mes == "05") {
+                                            echo "selected";
+                                        } ?> >MAYO</option>
+                    <option value="06" <?php if ($periodo_mes == "06") {
+                                            echo "selected";
+                                        } ?> >JUNIO</option>
+                    <option value="07" <?php if ($periodo_mes == "07") {
+                                            echo "selected";
+                                        } ?> >JULIO</option>
+                    <option value="08" <?php if ($periodo_mes == "08") {
+                                            echo "selected";
+                                        } ?> >AGOSTO</option>
+                    <option value="09" <?php if ($periodo_mes == "09") {
+                                            echo "selected";
+                                        } ?> >SEPTIEMBRE</option>
+                    <option value="10" <?php if ($periodo_mes == "10") {
+                                            echo "selected";
+                                        } ?> >OCTUBRE</option>
+                    <option value="11" <?php if ($periodo_mes == "11") {
+                                            echo "selected";
+                                        } ?> >NOVIEMBRE</option>
+                    <option value="12" <?php if ($periodo_mes == "12") {
+                                            echo "selected";
+                                        } ?> >DICIEMBRE</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-3 control-label">REGIÓN <span class="asterisk">*</span></label>
+            <div class="col-sm-3">
+                <select class="form-control" name="periodo_region" id="periodo_region">
+                    <option value="">Seleccionar...</option>
+                    <?php foreach ($regiones as $key => $value) : ?>
+                        <option value="<?php echo $value["codigo"] ?>" <?php if ($regionConsulta == $value["codigo"]) {
+                                                                            echo "selected";
+                                                                        } ?>><?php echo $value["codigo"] . " : " . $value["nombre"] ?></option>
+                    <?php endforeach ?>
+                    <option value="17" <?php if (isset($_POST["periodo_region"]) && $_POST["periodo_region"] == 17) {
+                                            echo "selected";
+                                        } ?> >CONSOLIDADO NACIONAL</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-3">
+                <button class="btn btn-success" onclick="this.form.submit()">BUSCAR <i class="fa fa-search"></i></button>
+                <!-- <button type="reset" class="btn btn-dark">Reset</button> -->
+            </div>
+        </div>
+
+    </form>
+</div>
+</div>
+
+
         <!-- INFORMACION DEL CLIENTE !-->
     <div class="panel panel-dark">
         <div class="panel-heading">
@@ -33,14 +145,14 @@ $documentos = getDocumentosDTE(33,$regionSession);
         </thead>
 
         <tbody>
-            <?php foreach ($documentos as $key => $value): ?>
+            <?php foreach ($documentos as $key => $value) : ?>
                 <tr>
                     <td><?php echo $value["dte_id"] ?></td>
                     <td><?php echo $value["dte_folio"] ?></td>
                     <td><?php echo $value["cliente_empresa"] ?></td>
                     <td><?php echo $value["dte_fecha"] ?></td>
-                    <td>$<?php echo number_format($value["dte_total"],0,".",".") ?></td>
-                    <td><a href="../sistemas/archivos/SII/<?php echo $value["dte_ruta"].$value["dte_archivo"] ?>.xml" target="_blank">XML</td>
+                    <td>$<?php echo number_format($value["dte_total"], 0, ".", ".") ?></td>
+                    <td><a href="../sistemas/archivos/SII/<?php echo $value["dte_ruta"] . $value["dte_archivo"] ?>.xml" target="_blank">XML</td>
                     <td><a href="documento.php?dte_id=<?php echo $value["dte_id"] ?>" target="_blank">PDF</td>
                     <td><?php echo $value["dte_estado_upload"] ?></td>
                     <td>
@@ -52,26 +164,18 @@ $documentos = getDocumentosDTE(33,$regionSession);
                                 <li><a class="btn pull-left" href="?pagina=QueryEstUp&id=<?php echo $value["dte_id"] ?>&tipo=dte"><i class="fa fa-cloud-upload"></i> Consulta Upload</a></li>
                                     <li class="divider"></li>
                                     <li><a class="btn pull-left" href="?pagina=detalle&id=<?php echo $value["dte_id"] ?>"><i class="fa fa-eye"></i> Detalle</a></li>
-                                    <?php if ($value["dte_estado_upload"] == "EPR - Envio Procesado"): ?>
-                                        <li><a cliente_id="<?php echo $value["cliente_id"] ?>" fact_id="<?php echo $value["dte_id"] ?>" class="btn enviarcorreo pull-left" ><i class="fa fa-envelope"></i> Enviar / Correo</a></li>
-                                    <?php endif ?>
-                                    <li><a onClick="enviarCorreo('<?php echo $value["dte_tracking"] ?>',<?php echo $regionSession ?>)"><i class="fa fa-envelope-o"></i> Reenviar Correo</a></li>
-                                    <!-- <li><a href="#">Separated link</a></li> -->
-
-                                    <!-- <li><a href="#">Separated link</a></li> -->
                                 </ul>
                             </div>
                     </td>
                     <td>
                     <?php
                     $referencias = getReferencias($value["dte_id"]);
-                    if($referencias["Respuesta"] == true)
-                    {
+                    if ($referencias["Respuesta"] == true) {
                         foreach ($referencias["Mensaje"] as $key => $value) {
-                            echo "Folio : ".$value["dte_folio"].". Tipo : ".$value["dcto_glosa"]." (".$value["dte_dcto_id"].")<br>";
+                            echo "Folio : " . $value["dte_folio"] . ". Tipo : " . $value["dcto_glosa"] . " (" . $value["dte_dcto_id"] . ")<br>";
                         }
-                    }else{
-                        echo "<font color='red'>".$referencias["Mensaje"]."</font>";
+                    } else {
+                        echo "<font color='red'>" . $referencias["Mensaje"] . "</font>";
                     }
                     ?>
                     </td>

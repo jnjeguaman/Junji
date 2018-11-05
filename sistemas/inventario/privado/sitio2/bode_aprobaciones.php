@@ -79,7 +79,7 @@
 		$sql1 = $sql;
 	}
 
-		// echo $sql;
+		 echo $sql;
 			// $sql.=" LI"
 	$sql = mysql_query($sql.=" LIMIT $start,$limite");
 

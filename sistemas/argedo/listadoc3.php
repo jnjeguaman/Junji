@@ -179,7 +179,7 @@ if ($op==5) {
                         class="zz1_TopNavigationMenu_1 ms-topnav zz1_TopNavigationMenu_3 <? echo $clase1 ?>"
                         style="FONT-SIZE: 1em; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" 
                         accessKey=1 
-                        href="estayopera.php" data-toggle="tooltip" data-placement="<? echo $posicion; ?>" title="<? echo $text1; ?>">Estadística y Operación</A></TD></TR></TBODY></TABLE></TD>
+                        href="estayopera.php" data-toggle="tooltip" data-placement="<? echo $posicion; ?>" title="<? echo $text1; ?>">Estadï¿½stica y Operaciï¿½n</A></TD></TR></TBODY></TABLE></TD>
                 <TD style="WIDTH: 0px"></TD>
                 <TD>
                   <TABLE class=zz1_TopNavigationMenu_5 cellSpacing=0 
@@ -530,7 +530,7 @@ if ($op==2) {
 ?>
                                 <tr>
                                 <td class=ms-vb style="PADDING-LEFT: 5px; PADDING-BOTTOM: 5px" colspan="4" >
-                                <input type="submit" name="boton" class=ms-vb style="PADDING-LEFT: 5px; PADDING-BOTTOM: 5px" value="   REALIZAR CONSULTA DOCUMENTOS ARGEDO AÑO <? echo $periodo ?>  ">
+                                <input type="submit" name="boton" class=ms-vb style="PADDING-LEFT: 5px; PADDING-BOTTOM: 5px" value="   REALIZAR CONSULTA DOCUMENTOS ARGEDO Aï¿½O <? echo $periodo ?>  ">
                                  <A onfocus=OnLink(this) href="listadoc3.php?reg=<? echo $reg ?>&op=<? echo $op ?>&periodo=<? echo $periodo ?>" class=ms-vb style="PADDING-LEFT: 5px; PADDING-BOTTOM: 5px">LIMPIAR</a>
                                 </TD>
 
@@ -570,7 +570,7 @@ if ($op==2) {
                                 <TD class=ms-vb2 width="70">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Materia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></TD>
                                 <TD class=ms-vb2>Tipo Documento</TD>
                                 <TD class=ms-vb2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fecha Documento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
-                                <TD class=ms-vb2><DIV>Año&nbsp;</DIV></TD>
+                                <TD class=ms-vb2><DIV>Aï¿½o&nbsp;</DIV></TD>
                                 <TD class=ms-vb2><NOBR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destinatario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</NOBR></TD>
                                 <TD class=ms-vb2><NOBR>Area</NOBR></TD>
                                 <TD class=ms-vb2>Subareas</TD>
@@ -602,7 +602,7 @@ if ($op==3) {
                                 <TD class=ms-vb2 width="20"><DIV>Observacion</DIV></TD>
                                 <TD class=ms-vb2><NOBR>Remitente</NOBR></TD>
                                 <TD class=ms-vb2 width="50%">Fecha Documento</TD>
-                                <TD class=ms-vb2 width="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Año&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                                <TD class=ms-vb2 width="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aï¿½o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
                                 <TD class=ms-vb2>Destinatario</TD>
                                 <TD class=ms-vb2>Region</TD>
                                 <TD class=ms-vb2>Creado</TD>
@@ -629,7 +629,7 @@ if ($op==4) {
                                 <TD class=ms-vb2>Observacion</TD>
                                 <TD class=ms-vb2><NOBR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destinatario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</NOBR></TD>
                                 <TD class=ms-vb2>Fecha Documento</TD>
-                                <TD class=ms-vb2><NOBR>Año</NOBR></TD>
+                                <TD class=ms-vb2><NOBR>Aï¿½o</NOBR></TD>
                                 <TD class=ms-vb2>Numero Propio</TD>
                                 <TD class=ms-vb2>Remitente</TD>
                                 <TD class=ms-vb2><SPAN>Area</SPAN></TD>
@@ -730,7 +730,7 @@ if ($op==4) {
      $sql="select $select from $tabla where despa_defensoria='$reg' and despa_anno='$periodo' $consultasql order by despa_id desc";
 }
 // $sql="select * from $tabla where  ";
-// echo $sql;
+ echo $sql;
 
 $sql2=$sql;
 $resultado=mysql_query($sql);
@@ -839,7 +839,7 @@ if ($op==4) {
  
 //  echo "$fechahoy-$fechabase $diff<br>";
  if ($diff<=1) {
-     $nuevo="¡Nuevo!";
+     $nuevo="ï¿½Nuevo!";
      $color="#31B404";
  } else {
       $nuevo="";
@@ -980,7 +980,7 @@ if ($limitesuperior3>=$total_paginas and $total_paginas<>0 and $pagina>5) {
 		}
 
 		echo "</center></td></tr>";
-        echo "<tr><td class=ms-vb2 colspan=4>Nº Paginas: $total_paginas, Total Registros: $total_registros </td></tr>";
+        echo "<tr><td class=ms-vb2 colspan=4>Nï¿½ Paginas: $total_paginas, Total Registros: $total_registros </td></tr>";
 
  ?>
 
