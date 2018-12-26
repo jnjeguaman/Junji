@@ -10,21 +10,19 @@ $nivel = $_SESSION["pfl_user"];
 
 $regionsession = $_SESSION["region"];
 
-$usuario=$_SESSION["nom_user"];
+$usuario = $_SESSION["nom_user"];
 
-$deptosession=$_SESSION["depto"];
+$deptosession = $_SESSION["depto"];
 
-if($_SESSION["nom_user"] =="" ){
-
-	?><script language="javascript">location.href='sesion_perdida.php';</script><?
-
+if ($_SESSION["nom_user"] == "") {
+	echo '<script language="javascript">location.href=\'sesion_perdida.php\';</script>';
 }
 
-$date_in=date("d-m-Y");
+$date_in = date("d-m-Y");
 
-$date_in2=date("Y-m-d");
+$date_in2 = date("Y-m-d");
 
-$ti=$_GET["ti"];
+$ti = $_GET["ti"];
 
 ?>
 
@@ -42,287 +40,40 @@ $ti=$_GET["ti"];
 	<script type="text/javascript" src="librerias/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="librerias/jquery.blockUI.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../inventario/privado/sitio2/css/font-awesome.min.css">
+	<script type="text/javascript" src="select_dependientesargedo.js"></script>
 
-	<style type="text/css">
+	<!-- calendar stylesheet -->
 
-		<!--
+	<link rel="stylesheet" type="text/css" media="all" href="librerias/calendar-win2k-cold-1.css" title="win2k-cold-1" />
 
-		body {
 
-			margin-left: 0px;
 
-			margin-top: 0px;
+	<!-- main calendar program -->
 
-			margin-right: 0px;
+	<script type="text/javascript" src="librerias/calendar.js"></script>
 
-			margin-bottom: 0px;
 
-		}
 
-		.Estilo1 {
+	<!-- language for the calendar -->
 
-			font-family: Verdana;
+	<script type="text/javascript" src="librerias/lang/calendar-en.js"></script>
 
-			font-weight: bold;
 
-			font-size: 10px;
 
-			color: #003063;
+  	<!-- the following script defines the Calendar.setup helper function, which makes adding a calendar a matter of 1 or 2 lines of code. -->
 
-			text-align: left;
+  	<script type="text/javascript" src="librerias/calendar-setup.js"></script>
 
-			text-transform: uppercase;
+	<script src="librerias/js/jscal2.js"></script>
 
-		}
+	<script src="librerias/js/lang/es.js"></script>
 
-		.Estilo1b {
+	<link rel="stylesheet" type="text/css" href="librerias/css/jscal2.css" />
 
-			font-family: Verdana;
+	<link rel="stylesheet" type="text/css" href="librerias/css/border-radius.css" />
 
-			font-weight: bold;
-
-			font-size: 8px;
-
-			color: #003063;
-
-			text-align: center;
-
-
-
-
-
-		}
-
-		.Estilo1c {
-
-			font-family: Verdana;
-
-			font-weight: bold;
-
-			font-size: 8px;
-
-			color: #003063;
-
-			text-align: right;
-
-		}
-
-		.Estilo1d {
-
-			font-family: Verdana;
-
-			font-weight: bold;
-
-			font-size: 10px;
-
-			color: #003063;
-
-			text-align: right;
-
-		}
-
-		.Estilo2 {
-
-			font-family: Verdana;
-
-			font-size: 10px;
-
-			text-align: left;
-
-			text-transform: uppercase;
-
-		}
-
-
-
-		.Estilo2b {
-
-			font-family: Verdana;
-
-			font-size: 9px;
-
-			text-align: left;
-
-		}
-
-		.Estilo1cverde {
-
-			font-family: Verdana;
-
-			font-weight: bold;
-
-			font-size: 8px;
-
-			color: #009900;
-
-			text-align: right;
-
-		}
-
-		.Estilo1camarrillo {
-
-			font-family: Verdana;
-
-			font-weight: bold;
-
-			font-size: 8px;
-
-			color: #CCCC00;
-
-			text-align: right;
-
-		}
-
-		.Estilo1crojo {
-
-			font-family: Verdana;
-
-			font-weight: bold;
-
-			font-size: 8px;
-
-			color: #CC0000;
-
-			text-align: right;
-
-		}
-
-		.Estilo1crojoc {
-
-			font-family: Verdana;
-
-			font-weight: bold;
-
-			font-size: 12px;
-
-			color: #CC0000;
-
-			text-align: center;
-
-		}
-
-		.link {
-
-			font-family: Geneva, Arial, Helvetica, sans-serif;
-
-			font-size: 10px;
-
-			font-weight: bold;
-
-			color: #00659C;
-
-			text-decoration:none;
-
-			text-transform:uppercase;
-
-		}
-
-		.link:over {
-
-			font-family: Geneva, Arial, Helvetica, sans-serif;
-
-			font-size: 10px;
-
-			color: #0000cc;
-
-			text-decoration:none;
-
-			text-transform:uppercase;
-
-		}
-
-		.Estilo4 {
-
-			font-size: 10px;
-
-			font-weight: bold;
-
-		}
-
-		.Estilo7 {font-family: Geneva, Arial, Helvetica, sans-serif;
-
-			font-size: 14px;
-
-			font-weight: bold;
-
-			text-align: center; }
-
-
-
-		}
-
-		.Estilo8 {font-family: Geneva, Arial, Helvetica, sans-serif; 
-
-			font-size: 10px; font-weight: bold; text-align: left; 
-
-			color: #009900;}
-
-
-
-		-->
-
-	</style>
-
-
-
-
-
-
-
+	<link rel="stylesheet" type="text/css" href="librerias/css/steel/steel.css" />
 </head>
-
-<script type="text/javascript" src="select_dependientesargedo.js"></script>
-
-<!-- calendar stylesheet -->
-
-<link rel="stylesheet" type="text/css" media="all" href="librerias/calendar-win2k-cold-1.css" title="win2k-cold-1" />
-
-
-
-<!-- main calendar program -->
-
-<script type="text/javascript" src="librerias/calendar.js"></script>
-
-
-
-<!-- language for the calendar -->
-
-<script type="text/javascript" src="librerias/lang/calendar-en.js"></script>
-
-
-
-  <!-- the following script defines the Calendar.setup helper function, which makes
-
-  adding a calendar a matter of 1 or 2 lines of code. -->
-
-  <script type="text/javascript" src="librerias/calendar-setup.js"></script>
-
-  
-
-  <script src="librerias/js/jscal2.js"></script>
-
-  <script src="librerias/js/lang/es.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="librerias/css/jscal2.css" />
-
-  <link rel="stylesheet" type="text/css" href="librerias/css/border-radius.css" />
-
-  <link rel="stylesheet" type="text/css" href="librerias/css/steel/steel.css" />
-
-
-
-
-
-  <SCRIPT LANGUAGE ="JavaScript">
-
-
-
-
-
-
-
-  </script>
-
   <script language="javascript">
 
   	<!--
@@ -330,7 +81,6 @@ $ti=$_GET["ti"];
 
 
   	function nuevoAjax()
-
   	{
 
 	/* Crea el objeto AJAX. Esta funcion es generica para cualquier utilidad de este tipo, por
@@ -381,60 +131,64 @@ function peso(tipoDato,c)  {
 
 	var ajax=nuevoAjax();
 
-//    alert (" dato "+tipoDato);
+    //alert (" dato "+tipoDato);
 
-ajax.open("POST", "peso.php", true);
+	ajax.open("POST", "peso.php", true);
 
-ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-ajax.send("d="+tipoDato);
+	ajax.send("d="+tipoDato);
 
 
 
-ajax.onreadystatechange=function()	{
+	ajax.onreadystatechange=function()	{
 
-	if (ajax.readyState==4) {
+		if (ajax.readyState==4) {
 
-			// Respuesta recibida. Coloco el texto plano en la capa correspondiente
+				// Respuesta recibida. Coloco el texto plano en la capa correspondiente
 
-			//capa.innerHTML=ajax.responseText;
+				//capa.innerHTML=ajax.responseText;
 
-//			document.form1.nombre.value=ajax.responseText;
+	//			document.form1.nombre.value=ajax.responseText;
 
-//            nombre2.innerText=ajax.responseText;
+	//            nombre2.innerText=ajax.responseText;
 
-var nn=ajax.responseText;
+			var nn=ajax.responseText;
 
-//              alert(nn);
+		//              alert(nn);
 
-if (nn=='1')  {
+			if (nn=='1')  {
 
-	alert("Archivo muy grande");
+				alert("Archivo muy grande");
 
-	document.getElementById(c).value ="1";
+				document.getElementById(c).value ="1";
 
+			}
+
+			if (nn=='0')  {
+
+				document.getElementById(c).value ="0";
+
+			}
+		}
+	}
 }
 
-if (nn=='0')  {
-
-	document.getElementById(c).value ="0";
+function ValidateSize(file,val) {
+	debugger;
+	var FileSize = file.files[0].size / 1024 / 1024; // in MB
+	if (FileSize > 7) {
+		alert('Archivo a excedido el m√°ximo permitido 7 MB');
+		// $(file).val(''); //for clearing with Jquery
+		document.getElementById(val).value ="1";
+	} else if(file.files[0].type!="application/pdf"){
+		alert('Solo se permiten archivos formato PDF');
+		document.getElementById(val).value ="1";
+	}else{
+		document.getElementById(val).value ="0";
+	}
 
 }
-
-
-
-
-
-}
-
-}
-
-}
-
-
-
-
-
 
 
 function ChequearTodos(chkbox)
@@ -535,7 +289,7 @@ function valida() {
 
 <?
 
-if ($ti==1) {
+if ($ti == 1) {
 
 	?>
 
@@ -566,7 +320,7 @@ if ($ti==1) {
 
 }
 
-if ($ti==2 or $ti==3 or $ti==7) {
+if ($ti == 2 or $ti == 3 or $ti == 7) {
 
 	?>
 
@@ -601,7 +355,7 @@ if ($ti==2 or $ti==3 or $ti==7) {
 //   return false;
 // }
 
-  if(confirm('ø EST¡ SEGURO DE PROCEDER CON LA CARGA DE DATOS ?')) {
+  if(confirm('¬ø EST√Å SEGURO DE PROCEDER CON LA CARGA DE DATOS ?')) {
     blockUI();
   }
   else{
@@ -609,7 +363,7 @@ if ($ti==2 or $ti==3 or $ti==7) {
   }
 
 
-//return confirm("ø EST¡ SEGURO DE PROCEDER CON LA CARGA DE DATOS ?");
+//return confirm(" EST SEGURO DE PROCEDER CON LA CARGA DE DATOS ?");
 
 
 }
@@ -625,7 +379,16 @@ function mostrar() {
 	var tipo = document.form1.op1.value;
 	if(tipo == "RESERVADO" || tipo == "SECRETA" || tipo == "TRAMITE")
 	{
-		$("#alerta").html('<font color="red">Acto administrativo Reservado o Secreto, NO ADJUNTAR PDF.<br>En caso de haber adjuntado un archivo el sistema lo eliminar· autom·ticamente.</font><br><br><p style="font-size:0.9em;font-style:italic;color:#EC0303">Debe considerar que en virtud de la Ley N∞ 19.628 Sobre ProtecciÛn a la Vida Privada Usted est· en la obligaciÛn de guardar secreto sobre los datos de car·cter personal y/o sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitaciÛn de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al p˙blico y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgaciÛn. Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo p˙blico sÛlo podr· efectuarse respecto de las materias de su competencia y con sujeciÛn a la norma mencionada. En esas condiciones, no necesitar· el consentimiento del titular.î</p>');
+		$("#alerta").html('<font color="red">Acto administrativo Reservado o Secreto, NO ADJUNTAR PDF.<br>'+
+		'En caso de haber adjuntado un archivo el sistema lo eliminar√° autom√°ticamente.</font><br>'+
+		'<br><p style="font-size:0.9em;font-style:italic;color:#EC0303">Debe considerar que en virtud de la Ley N¬∞ 19.628 Sobre Protecci√≥n '+
+		'a la Vida Privada Usted est√° en la obligaci√≥n de guardar secreto sobre los datos de car√°cter personal y/o '+
+		'sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitaci√≥n '+
+		'de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al '+
+		'p√∫blico y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgaci√≥n. '+
+		'Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo p√∫blico s√≥lo podr√° '+
+		'efectuarse respecto de las materias de su competencia y con sujeci√≥n a la norma mencionada. '+
+		'En esas condiciones, no necesitar√° el consentimiento del titular.?</p>');
 		$("#archivo1").prop("required",false);
 	}else{
 		$("#alerta").html("");
@@ -756,8 +519,16 @@ function abreVentana(){
 
 
 //-->
-
-
+$(document).ready(function(){
+	$("#cmbFolioFaltante").on("change",function(){
+		if($(this).val()=="SI"){
+			$("#folioFaltante").removeClass("hidden");
+		}else{
+			$("#folioFaltante").addClass("hidden");
+		}
+		
+	});
+});
 
 </script>
 
@@ -765,50 +536,43 @@ function abreVentana(){
 
 
 
-function generaPaises()  {
-	$ti=$_GET["ti"];
-	$region=$_SESSION["region"];
+function generaPaises()
+{
+	$ti = $_GET["ti"];
+	$region = $_SESSION["region"];
 
-// RESOLUCI”N EXENTA
-	if($ti == 1)
-	{
-		if($region == 14)
-		{
+// RESOLUCIN EXENTA
+	if ($ti == 1) {
+		if ($region == 14) {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'RE' ORDER BY opcion ASC");
-		}else{
+		} else {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'REREG' ORDER BY opcion ASC");
 		}
 	}
 
-// RESOLUCI”N EXENTA CON TOMA
-	if($ti == 2)
-	{
-		if($region == 14)
-		{
+// RESOLUCIN EXENTA CON TOMA
+	if ($ti == 2) {
+		if ($region == 14) {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'RA' ORDER BY opcion ASC");
-		}else{
+		} else {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'RAREG' ORDER BY opcion ASC");
 		}
 	}
 
 // OFICIO ORDINARIO
-	if($ti == 3)
-	{
-		if($region == 14)
-		{
+	if ($ti == 3) {
+		if ($region == 14) {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'OO' ORDER BY opcion ASC");
-		}else{
+		} else {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'OOREG' ORDER BY opcion ASC");
 		}
 	}
 
 // OFICIO CIRCULAR
-	if($ti == 7)
-	{
-		if($region == 14)
-		{
+	if ($ti == 7) {
+		if ($region == 14) {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'OC' ORDER BY opcion ASC");
-		}else{
+		} else {
 			$consulta = mysql_query("select id,opcion FROM area WHERE codigo = 'OCREG' ORDER BY opcion ASC");
 		}
 	}
@@ -835,51 +599,51 @@ function generaPaises()  {
 
 //	echo "<select name='paises' id='paises' onChange='cargaContenido2(this.id)'>";
 
- echo "<select name='paises' id='paises'>";
+	echo "<select name='paises' id='paises'>";
 
- echo "<option value='0'>Seleccione...</option>";
+	echo "<option value='0'>Seleccione...</option>";
 
- while($registro=mysql_fetch_row($consulta)) {
+	while ($registro = mysql_fetch_row($consulta)) {
 
- 	echo "<option value='".$registro[0]."'>".$registro[1]."</option>";
+		echo "<option value='" . $registro[0] . "'>" . $registro[1] . "</option>";
 
- }
+	}
 
- echo "</select>";
-
-}
-
-
-
-
-
-
-
-if ($ti==1) {
-
-	$prefijo="RESOLUCI”N EXENTA";
-
-
-
-}
-
-if ($ti==2) {
-
-	$prefijo="RESOLUCI”N AFECTA CON TOMA";
-
-}
-
-if ($ti==3) {
-
-	$prefijo="ORDINARIO";
+	echo "</select>";
 
 }
 
 
 
-if ($ti==7) {
 
-	$prefijo="OFICIO CIRCULAR";
+
+
+
+if ($ti == 1) {
+
+	$prefijo = "RESOLUCI&Oacute;N EXENTA";
+
+
+
+}
+
+if ($ti == 2) {
+
+	$prefijo = "RESOLUCI&Oacute;N AFECTA CON TOMA";
+
+}
+
+if ($ti == 3) {
+
+	$prefijo = "ORDINARIO";
+
+}
+
+
+
+if ($ti == 7) {
+
+	$prefijo = "OFICIO CIRCULAR";
 
 }
 
@@ -895,8 +659,8 @@ if ($ti==7) {
 
 
 				<?
-				require("inc/top.php");
-				?>
+			require("inc/top.php");
+			?>
 
 			</div>
 		</div>
@@ -909,8 +673,8 @@ if ($ti==7) {
 				<div class="dash-unit2">
 
 					<?
-					require("inc/menu_1.php");
-					?>
+				require("inc/menu_1.php");
+				?>
 
 				</div>
 			</div>
@@ -966,27 +730,30 @@ if ($ti==7) {
 
 
 
-								if (isset($_GET["llave"])) {
+							if (isset($_GET["llave"])) {
 
-									$llave=$_GET["llave"];
+								$llave = $_GET["llave"];
 
-									if ($llave==0) {
+								if ($llave == 0) {
 
-										echo "<p>Registros insertados con Exito !";
-
-									}
-
-									if ($llave==1) {
-
-//   echo "<p><font color='#FF0000'>Registros NO insertados, Problemas con TamaÒo de Archivos !</font></p>";
-
-									}
+									echo "<p>Registros insertados con Exito !";
 
 								}
 
+								if ($llave == 1) {
+
+//   echo "<p><font color='#FF0000'>Registros NO insertados, Problemas con Tamao de Archivos !</font></p>";
+
+								}
+								if($llave==2){
+									echo "<p><font color='#FF0000'>Registros NO insertados, El Folio que esta tratando de Ingresar ya Existe en el sistema. !</font></p>";
+								}
+
+							}
 
 
-								?>
+
+							?>
 
 							</td>
 
@@ -1006,35 +773,35 @@ if ($ti==7) {
 
 						<?
 
-						$campo="fol_reg".$regionsession."_".$ti;
+					$campo = "fol_reg" . $regionsession . "_" . $ti;
 
-						$sql2="select $campo as folio from argedo_folios where fol_id=1 ";
+					$sql2 = "select $campo as folio from argedo_folios where fol_id=1 ";
 
 //  echo $sql2."<br>";
 
-						$result2=mysql_query($sql2);
+					$result2 = mysql_query($sql2);
 
-						$row2=mysql_fetch_array($result2);
+					$row2 = mysql_fetch_array($result2);
 
-						$foliomio=$row2["folio"];
+					$foliomio = $row2["folio"];
 
-						$foliomio2=$foliomio+1;
-
-
+					$foliomio2 = $foliomio + 1;
 
 
 
-						$sql22="select count(eta_id) as totaldevueltos from dpp_etapas where eta_estado=12 and eta_region='$regionsession' ";
+
+
+					$sql22 = "select count(eta_id) as totaldevueltos from dpp_etapas where eta_estado=12 and eta_region='$regionsession' ";
 
 //  echo $sql21;
 
-						$result22=mysql_query($sql22);
+					$result22 = mysql_query($sql22);
 
-						$row22=mysql_fetch_array($result22);
+					$row22 = mysql_fetch_array($result22);
 
-						$totaldevueltos=$row22["totaldevueltos"];
+					$totaldevueltos = $row22["totaldevueltos"];
 
-						?>
+					?>
 
 
 
@@ -1050,28 +817,38 @@ if ($ti==7) {
 
 								<form name="form1" action="argedo_grabaresyofi.php" method="post"  onSubmit="return valida()"   enctype="multipart/form-data">
 
-
-
-									<tr><td><br></td><tr>
-
+									<?php if ($_SESSION["Acceso"]["acc_folio_argedo"] == 0) { ?>
+									<tr><td><br></td></tr>
+									<tr>
+										<td valign="center" class="Estilo1">&iquest;Desea Ingresar Folio Faltante?</td>
+										<td>
+											<select name="cmbFolioFaltante" id="cmbFolioFaltante" class="Estilo1">
+												<option value="SI">SI</option>
+												<option value="NO" selected="selected">NO</option>
+											</select>
+										</td>
+									</tr>
+									<?php 
+							} ?>
+									<tr><td><br></td></tr>
 										<tr>
-
-											<td  valign="center" class="Estilo1">Fecha RecepciÛn Oficina de Partes</td>
-
+											<td  valign="center" class="Estilo1">Fecha Recepci&oacute;n Oficina de Partes</td>
 											<td class="Estilo1" valign="center">
-
 												<input type="hidden" name="fecha1" class="Estilo2" size="12" value="<? echo $date_in ?>" id="f_date_c1" ><? echo $date_in ?>
-
-
-
 											</td>
+										</tr>
+										
+										<tr><td><br></td></tr>
 
+										<tr id="folioFaltante" class="hidden">
+											<td valign="center" class="Estilo1">Folio <i style="color:#FF0000;">* </i></td>
+											<td class="Estilo1">
+												<input type="number" id="txtFolio" name="txtFolio" class="Estilo2" maxlength="6" /> 
+											</td>
 										</tr>
 
-										<tr><td><br></td><tr>
-
-
-
+										
+										<tr><td><br></td></tr>
 											<tr>
 
 												<td  valign="center" class="Estilo1">Regi&oacute;n</td>
@@ -1084,27 +861,27 @@ if ($ti==7) {
 
 														<?
 
-														if ($regionsession==0) {
+													if ($regionsession == 0) {
 
-															$sql2 = "Select * from regiones order by codigo";
+														$sql2 = "Select * from regiones order by codigo";
 
-															echo '<option value="">Select...</option>';
+														echo '<option value="">Select...</option>';
 
-														} else
+													} else
 
 														$sql2 = "Select * from regiones where codigo=$regionsession";
 
                                   //echo $sql;
 
-														$res2 = mysql_query($sql2);
+													$res2 = mysql_query($sql2);
 
 
 
-														while($row2 = mysql_fetch_array($res2)){
+													while ($row2 = mysql_fetch_array($res2)) {
 
 
 
-															?>
+														?>
 
 															<option value="<? echo $row2["codigo"] ?>"><? echo $row2["nombre"] ?></option>
 
@@ -1112,9 +889,9 @@ if ($ti==7) {
 
 															<?
 
-														}
+													}
 
-														?>
+													?>
 
 
 
@@ -1130,11 +907,11 @@ if ($ti==7) {
 
 											</tr>
 
-											<tr><td><br></td><tr>
+											<tr><td><br></td></tr>
 
 												<tr>
 
-													<td  valign="center" class="Estilo1">Fecha Documento <font color="#FF0000">* </font></td>
+													<td  valign="center" class="Estilo1">Fecha Documento <i style="color:#FF0000;">* </i></td>
 
 													<td class="Estilo1">
 
@@ -1172,11 +949,11 @@ if ($ti==7) {
 
 												</tr>
 
-												<?php if ($ti==2): ?>
+												<?php if ($ti == 2) : ?>
 
 													<!-- INTERVENCION FREDDY !-->
 													<tr>
-														<td  valign="center" class="Estilo1">Fecha Ingreso CGR <font color="#FF0000">* </font></td>
+														<td  valign="center" class="Estilo1">Fecha Ingreso CGR <i style="color:#FF0000;">* </i></td>
 														<td class="Estilo1">
 															<input type="text" name="docs_feccontra" class="Estilo2" size="12" value="<? echo $date_in ?>" id="docs_feccontra" >
 															<img src="calendario.gif" id="f_trigger_c3" style="cursor: pointer; border: 1px solid red;" title="Date selector"
@@ -1194,7 +971,7 @@ if ($ti==7) {
 													</tr>
 
 													<tr>
-														<td  valign="center" class="Estilo1">Fecha Toma RazÛn CGR <font color="#FF0000">* </font></td>
+														<td  valign="center" class="Estilo1">Fecha Toma Raz&oacute;n CGR <i style="color:#FF0000;">* </i></td>
 														<td class="Estilo1">
 															<input type="text" name="docs_fectoma" class="Estilo2" size="12" value="<? echo $date_in ?>" id="docs_fectoma" >
 															<img src="calendario.gif" id="f_trigger_c4" style="cursor: pointer; border: 1px solid red;" title="Date selector"
@@ -1212,7 +989,7 @@ if ($ti==7) {
 													</tr>
 
 													<tr>
-														<td  valign="center" class="Estilo1">Fecha Ingreso JUNJI por CGR</font></td>
+														<td  valign="center" class="Estilo1">Fecha Ingreso JUNJI por CGR</i></td>
 														<td class="Estilo1">
 															<input type="text" name="docs_fecing" class="Estilo2" size="12" id="docs_fecing" >
 															<img src="calendario.gif" id="f_trigger_c5" style="cursor: pointer; border: 1px solid red;" title="Date selector"
@@ -1230,7 +1007,7 @@ if ($ti==7) {
 													</tr>
 
 													<tr>
-														<td  valign="center" class="Estilo1">Fecha DevoluciÛn desde CGR</font></td>
+														<td  valign="center" class="Estilo1">Fecha Devoluci&oacute;n desde CGR</i></td>
 														<td class="Estilo1">
 															<input type="text" name="docs_fecdevo" class="Estilo2" size="12" id="docs_fecdevo" >
 															<img src="calendario.gif" id="f_trigger_c6" style="cursor: pointer; border: 1px solid red;" title="Date selector"
@@ -1248,7 +1025,7 @@ if ($ti==7) {
 													</tr>
 
 													<tr>
-														<td  valign="center" class="Estilo1">Fecha Retiro sin tramitar desde CGR</font></td>
+														<td  valign="center" class="Estilo1">Fecha Retiro sin tramitar desde CGR</i></td>
 														<td class="Estilo1">
 															<input type="text" name="docs_fecaretiro" class="Estilo2" size="12" id="docs_fecaretiro" >
 															<img src="calendario.gif" id="f_trigger_c7" style="cursor: pointer; border: 1px solid red;" title="Date selector"
@@ -1273,13 +1050,13 @@ if ($ti==7) {
 
 													<?
 
-													if ($regionsession==15 or $regionsession==8 AND 1==2) {
+												if ($regionsession == 15 or $regionsession == 8 and 1 == 2) {
 
-														?>
+													?>
 
 														<tr>
 
-															<td  valign="center" class="Estilo1">N∞ Folio DocMaster</td>
+															<td  valign="center" class="Estilo1">N¬∞ Folio DocMaster</td>
 
 															<td class="Estilo1" colspan=3>
 
@@ -1297,15 +1074,15 @@ if ($ti==7) {
 
 														<?
 
-													}
+												}
 
-													if ($ti==7) {
+												if ($ti == 7) {
 
-														?>
+													?>
 
 														<tr>
 
-															<td  valign="center" class="Estilo1">¡REA <font color="#FF0000">* </font></td>
+															<td  valign="center" class="Estilo1">&Aacute;REA <i style="color:#FF0000;">* </i></td>
 
 															<td>
 																<?php generaPaises(); ?>
@@ -1319,13 +1096,13 @@ if ($ti==7) {
 
 														<?
 
-													} else {
+												} else {
 
-														?>
+													?>
 
 														<tr>
 
-															<td  valign="center" class="Estilo1">¡REA <font color="#FF0000">* </font></td>
+															<td  valign="center" class="Estilo1">&Aacute;REA <i style="color:#FF0000;">* </i></td>
 
 															<td><?php generaPaises(); ?>
 
@@ -1337,9 +1114,9 @@ if ($ti==7) {
 
 														<?
 
-													}
+												}
 
-													?>
+												?>
 
 
 
@@ -1349,7 +1126,7 @@ if ($ti==7) {
 
                            <tr>
 
-                             <td valign="center" class="Estilo1">SUB¡REA <font color="#FF0000">* </font></td>
+                             <td valign="center" class="Estilo1">SUBREA <i style="color:#FF0000;">* </i></td>
 
                              <td>
 
@@ -1367,7 +1144,7 @@ if ($ti==7) {
 
                             <tr>
 
-                             <td  valign="center" class="Estilo1"><br>EN TR¡MITE  <font color="#FF0000">* </font></td>
+                             <td  valign="center" class="Estilo1"><br>EN TRMITE  <i style="color:#FF0000;">* </i></td>
 
                              <td class="Estilo1" colspan=3><br>
 
@@ -1385,9 +1162,9 @@ if ($ti==7) {
 
 
 
-                       if ($ti==1 || $ti==2) {
+																						if ($ti == 1 || $ti == 2) {
 
-                       	?>
+																							?>
 
 
 
@@ -1413,17 +1190,17 @@ if ($ti==7) {
 
                        	<tr>
 
-                       		<td  valign="center" class="Estilo1"><br>TIPO RESOLUCI”N <?php echo ($ti==1) ? "EXENTA" : "AFECTA" ?></td>
+                       		<td  valign="center" class="Estilo1"><br>TIPO RESOLUCI&Oacute;N <?php echo ($ti == 1) ? "EXENTA" : "AFECTA" ?></td>
 
                        		<td class="Estilo1" colspan=3><br>
 
-                       			<input type="radio" name="op1" class="Estilo2" value="NORMAL" checked onclick="mostrar();">Res. <?php echo ($ti==1) ? "Exenta" : "Afecta"?> "Normal"<br>
+                       			<input type="radio" name="op1" class="Estilo2" value="NORMAL" checked onclick="mostrar();">Res. <?php echo ($ti == 1) ? "Exenta" : "Afecta" ?> "Normal"<br>
 
-                       			<input type="radio" name="op1" class="Estilo2" value="RESERVADO" onclick="mostrar();">Res. <?php echo ($ti==1) ? "Exenta" : "Afecta"?> "Reservado"<br>
+                       			<input type="radio" name="op1" class="Estilo2" value="RESERVADO" onclick="mostrar();">Res. <?php echo ($ti == 1) ? "Exenta" : "Afecta" ?> "Reservado"<br>
 
-                       			<input type="radio" name="op1" class="Estilo2" value="SECRETA" onclick="mostrar();">Res. <?php echo ($ti==1) ? "Exenta" : "Afecta"?> "Secreta"<br>
+                       			<input type="radio" name="op1" class="Estilo2" value="SECRETA" onclick="mostrar();">Res. <?php echo ($ti == 1) ? "Exenta" : "Afecta" ?> "Secreta"<br>
 
-                       			<?php if ($ti==2): ?>
+                       			<?php if ($ti == 2) : ?>
                        				<input type="radio" name="op1" class="Estilo2" value="TRAMITE" onclick="mostrar();">En Tramite<br>
                        			<?php endif ?>
 
@@ -1497,7 +1274,7 @@ if ($ti==7) {
 
               		<tr>
 
-              			<td  valign="center" class="Estilo1"><br>FECHA T…RMINO</td>
+              			<td  valign="center" class="Estilo1"><br>FECHA T&Eacute;RMINO</td>
 
               			<td class="Estilo1" colspan=3><br>
 
@@ -1615,7 +1392,7 @@ if ($ti==7) {
 
               		<tr>
 
-              			<td  valign="center" class="Estilo1"><br>FECHA T…RMINO</td>
+              			<td  valign="center" class="Estilo1"><br>FECHA T&Eacute;RMINO</td>
 
               			<td class="Estilo1" colspan=3><br>
 
@@ -1667,7 +1444,7 @@ if ($ti==7) {
 
               		<tr>
 
-              			<td  valign="center" class="Estilo1" ><br>MATERIA 1 <font color="#FF0000">* </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              			<td  valign="center" class="Estilo1" ><br>MATERIA 1 <i style="color:#FF0000;">* </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
               			<td class="Estilo1" colspan=1><br>
 
@@ -1687,7 +1464,7 @@ if ($ti==7) {
 
               		<tr>
 
-              			<td  valign="center" class="Estilo1" ><br>MATERIA 2 <font color="#FF0000">* </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+              			<td  valign="center" class="Estilo1" ><br>MATERIA 2 <i style="color:#FF0000;">* </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
               			<td class="Estilo1" colspan=1><br>
 
@@ -1743,15 +1520,15 @@ if ($ti==7) {
 
 
 
-              } else {
+													} else {
 
-              	?>
+														?>
 
               	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 
               		<tr>
 
-              			<td  valign="center" class="Estilo1" ><br>MATERIA 2<font color="#FF0000">* </font> </td>
+              			<td  valign="center" class="Estilo1" ><br>MATERIA 2<i style="color:#FF0000;">* </i> </td>
 
               			<td class="Estilo1" colspan=3><br>
 
@@ -1767,11 +1544,11 @@ if ($ti==7) {
 
               		<?
 
-              	}
+														}
 
-              	if ($ti==3 or $ti==7 ) {
+														if ($ti == 3 or $ti == 7) {
 
-              		?>
+															?>
 
 <!--
 
@@ -1791,9 +1568,9 @@ if ($ti==7) {
 
                        <?
 
-                   }
+																					}
 
-                   ?>
+																					?>
 
                    <tr>
 
@@ -1811,7 +1588,7 @@ if ($ti==7) {
 
                    <tr>
 
-                   	<td  valign="center" class="Estilo1" width="340"><br>OBSERVACI”N  </td>
+                   	<td  valign="center" class="Estilo1" width="340"><br>OBSERVACI&Oacute;N  </td>
 
                    	<td class="Estilo1" colspan=3><br>
 
@@ -1832,7 +1609,7 @@ if ($ti==7) {
 
                    		<td class="Estilo1" colspan=3><br>
 
-                   			<input type="file" name="archivo1" id="archivo1" class="Estilo2" size="40" onchange="peso(document.form1.archivo1.value,'peso1')" required>
+                   			<input type="file" name="archivo1" id="archivo1" class="Estilo2" size="40" onchange="ValidateSize(this)" required>
 
                    		</td>
 
@@ -1878,7 +1655,7 @@ if ($ti==7) {
 
                    	<tr>
 
-                   		<td  valign="center" class="Estilo1" colspan="4"><BR><font color="#FF0000"> * CAMPOS OBLIGATORIOS </font></td>
+                   		<td  valign="center" class="Estilo1" colspan="4"><BR><i style="color:#FF0000;"> * CAMPOS OBLIGATORIOS </i></td>
 
                    	</tr>
 
@@ -1889,14 +1666,14 @@ if ($ti==7) {
                    	<td><hr></td><td><hr></td>
                    </tr>
 
-                   <?php if ($ti==2): ?>
+                   <?php if ($ti == 2) : ?>
                    	<tr>
-                   		<td  valign="center" class="Estilo1">Derivado a</font></td>
+                   		<td  valign="center" class="Estilo1">Derivado a</i></td>
                    		<td><input type="text" name="docs_derivado" id="docs_derivado" class="Estilo2"></td>
                    	</tr>
 
                    	<tr>
-                   		<td  valign="center" class="Estilo1">Fecha DerivaciÛn</font></td>
+                   		<td  valign="center" class="Estilo1">Fecha Derivaci&ocute;n</i></td>
                    		<td><input type="text" name="docs_derivadofec" id="docs_derivadofec" class="Estilo2" value="<? echo $date_in ?>">
                    			<img src="calendario.gif" id="f_trigger_c8" style="cursor: pointer; border: 1px solid red;" title="Date selector"
                    			onmouseover="this.style.background='red';" onMouseOut="this.style.background=''" />
@@ -1913,7 +1690,7 @@ if ($ti==7) {
                    	</tr>
 
                    	<tr>
-                   		<td  valign="center" class="Estilo1">Observaciones</font></td>
+                   		<td  valign="center" class="Estilo1">Observaciones</i></td>
                    		<td class="Estilo1">
 
                    			<textarea name="docs_obs2" id="docs_obs2" rows="3" cols="40" onKeypress=" if (event.keyCode==39) { event.returnValue = false; } ; "></textarea><p></p>
@@ -1922,7 +1699,7 @@ if ($ti==7) {
                    	</tr>
 
                    	<tr>
-                   		<td  valign="center" class="Estilo1">Fecha Observacion</font></td>
+                   		<td  valign="center" class="Estilo1">Fecha Observacion</i></td>
                    		<td><input type="text" name="docs_obs2fecha" id="docs_obs2fecha" class="Estilo2" value="<? echo $date_in ?>">
                    			<img src="calendario.gif" id="f_trigger_c9" style="cursor: pointer; border: 1px solid red;" title="Date selector"
                    			onmouseover="this.style.background='red';" onMouseOut="this.style.background=''" />
@@ -1975,7 +1752,7 @@ if ($ti==7) {
 
     <tr>
 
-    	<td colspan=4 align="center" class="Estilo7">⁄ltimo Correlativo : <? echo $foliomio ?>, el prÛximo es : <? echo $foliomio2 ?> </td>
+    	<td colspan=4 align="center" class="Estilo7">&Uacute;ltimo Correlativo : <? echo $foliomio ?>, el pr&oacute;ximo es : <? echo $foliomio2 ?> </td>
 
     </tr>
 
@@ -2053,23 +1830,23 @@ if ($ti==7) {
 
 			<?
 
-			$sql21="select max(eta_folioguia) as foliomio from dpp_etapas where eta_region='$regionsession' ";
+		$sql21 = "select max(eta_folioguia) as foliomio from dpp_etapas where eta_region='$regionsession' ";
 
 //  echo $sql21;
 
-			$result21=mysql_query($sql21);
+		$result21 = mysql_query($sql21);
 
-			$row21=mysql_fetch_array($result21);
+		$row21 = mysql_fetch_array($result21);
 
-			$foliomio=$row21["foliomio"];
+		$foliomio = $row21["foliomio"];
 
-			$foliomio=$foliomio+1;
-
-
+		$foliomio = $foliomio + 1;
 
 
 
-			?>
+
+
+		?>
 
 
 
@@ -2105,15 +1882,15 @@ if ($ti==7) {
 
 
 
-			if ($regionsession==0) {
+		if ($regionsession == 0) {
 
-				$sql="select * from argedo_documentos where  eta_estado=1 and eta_folioguia=0 order by eta_folio desc limit 0,10";
+			$sql = "select * from argedo_documentos where  eta_estado=1 and eta_folioguia=0 order by eta_folio desc limit 0,10";
 
-			} else {
+		} else {
 
-				$sql="select * from argedo_documentos where docs_estado=1 and docs_folioguia=0 and docs_defensoria ='$regionsession' and docs_tipo='$ti'  order by docs_fecha desc, docs_folio desc limit 0,50";
+			$sql = "select * from argedo_documentos where docs_estado=1 and docs_folioguia=0 and docs_defensoria ='$regionsession' and docs_tipo='$ti'  order by docs_fecha desc, docs_folio desc limit 0,50";
 
-			}
+		}
 
 
 
@@ -2121,97 +1898,97 @@ if ($ti==7) {
 
 //echo $sql;
 
-			$res3 = mysql_query($sql);
+		$res3 = mysql_query($sql);
 
-			$cont=1;
-
-
-
-			while($row3 = mysql_fetch_array($res3)){
-
-				$fechahoy = $date_in2;
-
-				$dia1 = strtotime($fechahoy);
-
-				$fechabase =$row3["eta_fecha_recepcion"];
-
-				$dia2 = strtotime($fechabase);
-
-				$diff=$dia1-$dia2;
-
-				$diff=intval($diff/(60*60*24));
-
-				if ($etapa1a>=$diff)
-
-					$clase="Estilo1cverde";
-
-				if ($etapa1a<$diff and $etapa1b>=$diff )
-
-					$clase="Estilo1camarrillo";
-
-				if ( $etapa1b<$diff)
-
-					$clase="Estilo1crojo";
+		$cont = 1;
 
 
 
+		while ($row3 = mysql_fetch_array($res3)) {
+
+			$fechahoy = $date_in2;
+
+			$dia1 = strtotime($fechahoy);
+
+			$fechabase = $row3["eta_fecha_recepcion"];
+
+			$dia2 = strtotime($fechabase);
+
+			$diff = $dia1 - $dia2;
+
+			$diff = intval($diff / (60 * 60 * 24));
+
+			if ($etapa1a >= $diff)
+
+				$clase = "Estilo1cverde";
+
+			if ($etapa1a < $diff and $etapa1b >= $diff)
+
+				$clase = "Estilo1camarrillo";
+
+			if ($etapa1b < $diff)
+
+				$clase = "Estilo1crojo";
 
 
-				$sql5="select * from dpp_plazos ";
+
+
+
+			$sql5 = "select * from dpp_plazos ";
 
    //echo $sql;
 
-				$res5 = mysql_query($sql5);
+			$res5 = mysql_query($sql5);
 
-				$row5 = mysql_fetch_array($res5);
+			$row5 = mysql_fetch_array($res5);
 
-				$etapa1a=$row5["pla_etapa1a"];
+			$etapa1a = $row5["pla_etapa1a"];
 
-				$etapa1b=$row5["pla_etapa1b"];
-
-
-
-				$areaid=$row3["docs_area"];
-
-				$subareaid=$row3["docs_subarea"];
+			$etapa1b = $row5["pla_etapa1b"];
 
 
 
-				$sql6="select * from area where id=$areaid ";
+			$areaid = $row3["docs_area"];
+
+			$subareaid = $row3["docs_subarea"];
+
+
+
+			$sql6 = "select * from area where id=$areaid ";
 
 //   echo $sql6;
 
-				$res6 = mysql_query($sql6);
+			$res6 = mysql_query($sql6);
 
-				$row6 = mysql_fetch_array($res6);
+			$row6 = mysql_fetch_array($res6);
 
-				$areanombre=$row6["opcion"];
+			$areanombre = $row6["opcion"];
 
-				if ($areanombre=='') {
+			if ($areanombre == '') {
 
-					$areanombre=$row3["docs_area"];
+				$areanombre = $row3["docs_area"];
 
-				}
+			}
 
 
 
-				$sql7="select * from subarea where id=$subareaid ";
+			$sql7 = "select * from subarea where id=$subareaid ";
 
 //   echo $sql7;
 
-				$res7 = mysql_query($sql7);
+			$res7 = mysql_query($sql7);
 
-				$row7 = mysql_fetch_array($res7);
+			$row7 = mysql_fetch_array($res7);
 
-				$subareanombre=$row7["opcion"];
-
-
+			$subareanombre = $row7["opcion"];
 
 
 
 
 
-				?>
+
+
+			?>
 
 
 
@@ -2219,19 +1996,19 @@ if ($ti==7) {
 
 				<tr>
 
-					<td class="Estilo1b"><? echo $row3["docs_folio"]  ?> </td>
+					<td class="Estilo1b"><? echo $row3["docs_folio"] ?> </td>
 
-					<td class="Estilo1b"><? echo $row3["docs_documento"]  ?> </td>
+					<td class="Estilo1b"><? echo $row3["docs_documento"] ?> </td>
 
-					<td class="Estilo1b"><? echo substr($row3["docs_fecha"],8,2)."-".substr($row3["docs_fecha"],5,2)."-".substr($row3["docs_fecha"],0,4)   ?></td>
+					<td class="Estilo1b"><? echo substr($row3["docs_fecha"], 8, 2) . "-" . substr($row3["docs_fecha"], 5, 2) . "-" . substr($row3["docs_fecha"], 0, 4) ?></td>
 
 
 
-					<td class="Estilo1b"><? echo $row3["docs_materia"]  ?> </td>
+					<td class="Estilo1b"><? echo $row3["docs_materia"] ?> </td>
 
-					<td class="Estilo1b"><? echo $areanombre  ?> </td>
+					<td class="Estilo1b"><? echo $areanombre ?> </td>
 
-					<td class="Estilo1b"><? echo $row3["docs_tramite"]  ?> </td>
+					<td class="Estilo1b"><? echo $row3["docs_tramite"] ?> </td>
 
 					<td class="Estilo1b"><a href="argedo_ficharesyofi.php?id=<? echo $row3["docs_id"]; ?>&ti=<? echo $ti; ?>&ori=1" class="link" > VER  </a> </td>
 
@@ -2257,13 +2034,13 @@ if ($ti==7) {
 
 
 
-				$cont++;
+			$cont++;
 
 
 
-			}
+		}
 
-			?>
+		?>
 
 
 
@@ -2303,39 +2080,32 @@ if ($ti==7) {
 										<option selected value="">Seleccionar...</option>
 										<?php 
 
-										if($_GET["ti"] == 1)
-										{
-											if($_SESSION["region"] == 14)
-											{
-												$sql = "SELECT id,opcion FROM area WHERE codigo = 'REDEST' AND region = 14  ORDER BY opcion ASC";
-											}else{
-												$sql = "SELECT id,opcion FROM area WHERE codigo = 'REREGDEST' AND region = 15  ORDER BY opcion ASC";
-											}
+									if ($_GET["ti"] == 1) {
+										if ($_SESSION["region"] == 14) {
+											$sql = "SELECT id,opcion FROM area WHERE codigo = 'REDEST' AND region = 14  ORDER BY opcion ASC";
+										} else {
+											$sql = "SELECT id,opcion FROM area WHERE codigo = 'REREGDEST' AND region = 15  ORDER BY opcion ASC";
 										}
-										if($_GET["ti"] == 2)
-										{
-											if($_SESSION["region"] == 14)
-											{
-												$sql = "SELECT id,opcion FROM area WHERE codigo = 'RADEST' AND region = 14 ORDER BY opcion ASC";
-											}else{
-												$sql = "SELECT id,opcion FROM area WHERE codigo = 'RAREGDEST' AND region = 15 ORDER BY opcion ASC";
-											}
+									}
+									if ($_GET["ti"] == 2) {
+										if ($_SESSION["region"] == 14) {
+											$sql = "SELECT id,opcion FROM area WHERE codigo = 'RADEST' AND region = 14 ORDER BY opcion ASC";
+										} else {
+											$sql = "SELECT id,opcion FROM area WHERE codigo = 'RAREGDEST' AND region = 15 ORDER BY opcion ASC";
 										}
+									}
 
-										if($_GET["ti"] == 3)
-										{
-											if($_SESSION["region"] == 14)
-											{
-												$sql = "SELECT id,opcion FROM area WHERE codigo = 'OODEST' AND region = 14  ORDER BY opcion ASC";
-											}else{
-												$sql = "SELECT id,opcion FROM area WHERE codigo = 'OOREGDEST' AND region = 15  ORDER BY opcion ASC";
-											}
+									if ($_GET["ti"] == 3) {
+										if ($_SESSION["region"] == 14) {
+											$sql = "SELECT id,opcion FROM area WHERE codigo = 'OODEST' AND region = 14  ORDER BY opcion ASC";
+										} else {
+											$sql = "SELECT id,opcion FROM area WHERE codigo = 'OOREGDEST' AND region = 15  ORDER BY opcion ASC";
 										}
+									}
 
-										if($_GET["ti"] == 7)
-										{
-											$sql ="SELECT * from regiones";
-										}
+									if ($_GET["ti"] == 7) {
+										$sql = "SELECT * from regiones";
+									}
 
 
 //              if($_GET["ti"]==1)
@@ -2378,12 +2148,13 @@ if ($ti==7) {
                 $sql = "SELECT * from area where region = 2";
               }
           }*/
-          $res = mysql_query($sql,$dbh);
-          $cont=0;
-          while($row = mysql_fetch_array($res)){
-          	?>
-          	<option value="<?php echo ($ti==7) ? $row["nombre"] : $row["opcion"] ?>"><?php echo ($ti==7) ? $row["nombre"] : $row["opcion"] ?></option>
-          	<?php $cont++;} ?>
+									$res = mysql_query($sql, $dbh);
+									$cont = 0;
+									while ($row = mysql_fetch_array($res)) {
+										?>
+          	<option value="<?php echo ($ti == 7) ? $row["nombre"] : $row["opcion"] ?>"><?php echo ($ti == 7) ? $row["nombre"] : $row["opcion"] ?></option>
+          	<?php $cont++;
+									} ?>
           </select>
       </center>
   </div>

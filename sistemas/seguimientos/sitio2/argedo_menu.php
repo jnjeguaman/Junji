@@ -10,14 +10,12 @@ $nivel = $_SESSION["pfl_user"];
 
 $regionsession = $_SESSION["region"];
 
-if($_SESSION["nom_user"] =="" ){
-
-	?><script language="javascript">location.href='sesion_perdida.php';</script><?
-
+if ($_SESSION["nom_user"] == "") {
+  ?>
+  <script language="javascript">location.href='sesion_perdida.php';</script>
+<?
 }
-
-$date_in=date("Y-m-d");
-
+$date_in = date("Y-m-d");
 ?>
 
 <html>
@@ -29,130 +27,6 @@ $date_in=date("Y-m-d");
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
-
-<style type="text/css">
-
-<!--
-
-body {
-
-	margin-left: 0px;
-
-	margin-top: 0px;
-
-	margin-right: 0px;
-
-	margin-bottom: 0px;
-
-}
-
-.Estilo1 {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 10px;
-
-	color: #003063;
-
-	text-align: left;
-
-}
-
-.Estilo1b {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 8px;
-
-	color: #003063;
-
-	text-align: left;
-
-}
-
-.Estilo1c {
-
-	font-family: Verdana;
-
-	font-weight: bold;
-
-	font-size: 8px;
-
-	color: #003063;
-
-	text-align: right;
-
-}
-
-.Estilo2 {
-
-	font-family: Verdana;
-
-	font-size: 10px;
-
-	text-align: left;
-
-}
-
-.Estilo2b {
-
-	font-family: Verdana;
-
-	font-size: 9px;
-
-	text-align: left;
-
-}
-
-.link {
-
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-
-	font-size: 10px;
-
-	font-weight: bold;
-
-	color: #00659C;
-
-	text-decoration:none;
-
-	text-transform:uppercase;
-
-}
-
-.link:over {
-
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-
-	font-size: 10px;
-
-	color: #0000cc;
-
-	text-decoration:none;
-
-	text-transform:uppercase;
-
-}
-
-.Estilo4 {
-
-	font-size: 10px;
-
-	font-weight: bold;
-
-}
-
-.Estilo7 {font-family: Geneva, Arial, Helvetica, sans-serif; 
-
-font-size: 14px; font-weight: bold;}
-
--->
-
-</style>
 
 <link rel="stylesheet" type="text/css" href="select_dependientes.css">
 
@@ -206,9 +80,9 @@ font-size: 14px; font-weight: bold;}
 
 	  <?
 
-	  require("inc/top.php");
+  require("inc/top.php");
 
-	  ?>
+  ?>
 
 
 
@@ -234,9 +108,9 @@ font-size: 14px; font-weight: bold;}
 
 		  <?
 
-		  require("inc/menu_1.php");
+    require("inc/menu_1.php");
 
-		  ?>
+    ?>
 
 
 
@@ -274,19 +148,19 @@ font-size: 14px; font-weight: bold;}
 
 <?
 
- $sql="select * from regiones where codigo=$regionsession ";
+$sql = "select * from regiones where codigo=$regionsession ";
 
 // echo $sql;
 
- $result=mysql_query($sql);
+$result = mysql_query($sql);
 
- $row=mysql_fetch_array($result);
+$row = mysql_fetch_array($result);
 
- $nombre=$row["nombre"];
+$nombre = $row["nombre"];
 
- $inicio=$row["inicio"];
+$inicio = $row["inicio"];
 
- $dirargedo=$row["argedo"];
+$dirargedo = $row["argedo"];
 
 // $anno=date("Y");
 
@@ -308,10 +182,10 @@ font-size: 14px; font-weight: bold;}
 
 
       <?php
-      
-      if($_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 38) {
 
-          ?>
+      if ($_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 38) {
+
+        ?>
 
 
 
@@ -331,10 +205,11 @@ font-size: 14px; font-weight: bold;}
 
 
       <?php
-      }
-      if($_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 38) {
 
-          ?>
+    }
+    if ($_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 38) {
+
+      ?>
 
 
 
@@ -357,8 +232,9 @@ font-size: 14px; font-weight: bold;}
 
 
       <?php
-      }
-          ?>
+
+    }
+    ?>
 
 
 
@@ -377,59 +253,60 @@ font-size: 14px; font-weight: bold;}
 
                             </tr>
 
-<?   
+<?
 
-if ($regionsession==1 or $regionsession==2 or  $regionsession==3 or $regionsession==4 or $regionsession==5 or $regionsession==6 or $regionsession==7 or $regionsession==8 or $regionsession==9 or $regionsession==10 or $regionsession==11 or $regionsession==12 or $regionsession==13  or $regionsession==14 or $regionsession==15 or $regionsession==17 or $regionsession==18 ) {
+if ($regionsession == 1 or $regionsession == 2 or $regionsession == 3 or $regionsession == 4 or $regionsession == 5 or $regionsession == 6 or $regionsession == 7 or $regionsession == 8 or $regionsession == 9 or $regionsession == 10 or $regionsession == 11 or $regionsession == 12 or $regionsession == 13 or $regionsession == 14 or $regionsession == 15 or $regionsession == 17 or $regionsession == 18) {
 
 
-      
-      if($_SESSION["pfl_user"] != 3 && $_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 37 && $_SESSION["pfl_user"] != 38) {
 
-          ?>
+  if ($_SESSION["pfl_user"] != 3 && $_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 37 && $_SESSION["pfl_user"] != 38) {
+
+    ?>
 
 
 
                             <tr>
 
-                             <td  valign="top" class="Estilo1" colspan="2"><a href="argedo_ingresoant.php?cod=29" class="link" >4. CARGA AÑOS ANTERIORES </a>  </td>
+                             <td  valign="top" class="Estilo1" colspan="2"><a href="argedo_ingresoant.php?cod=29" class="link" >4. CARGA Aï¿½OS ANTERIORES </a>  </td>
 
                            </tr>
 
 
 
       <?php
-      }
+
+    }
 
 
 
 
 
-} else {
+  } else {
 
 
-      
-      if($_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 37 && $_SESSION["pfl_user"] != 38) {
 
-          ?>
+    if ($_SESSION["pfl_user"] != 5 && $_SESSION["pfl_user"] != 7 && $_SESSION["pfl_user"] != 31 && $_SESSION["pfl_user"] != 32 && $_SESSION["pfl_user"] != 33 && $_SESSION["pfl_user"] != 34 && $_SESSION["pfl_user"] != 35 && $_SESSION["pfl_user"] != 36 && $_SESSION["pfl_user"] != 37 && $_SESSION["pfl_user"] != 38) {
+
+      ?>
 
 
 
 
                          <tr>
 
-                             <td  valign="top" class="Estilo1" colspan="2"><a href="http://grus:81/Resoluciones-Oficios/Lists/<? echo $dirargedo ?>/NewForm.aspx" class="link" target="_blank" >4. CARGA AÑOS ANTERIORES</a>  </td>
+                             <td  valign="top" class="Estilo1" colspan="2"><a href="http://grus:81/Resoluciones-Oficios/Lists/<? echo $dirargedo ?>/NewForm.aspx" class="link" target="_blank" >4. CARGA Aï¿½OS ANTERIORES</a>  </td>
 
                            </tr>
 
       <?php
-      
-      }
+
+    }
 
 
 
-}
+  }
 
-?>
+  ?>
 
 
 
@@ -449,37 +326,37 @@ if ($regionsession==1 or $regionsession==2 or  $regionsession==3 or $regionsessi
 
 <?
 
-  $reg=$regionsession;
+$reg = $regionsession;
 
-  $campo1="fol_reg".$reg."_1";
+$campo1 = "fol_reg" . $reg . "_1";
 
-  $campo2="fol_reg".$reg."_2";
+$campo2 = "fol_reg" . $reg . "_2";
 
-  $campo3="fol_reg".$reg."_3";
+$campo3 = "fol_reg" . $reg . "_3";
 
-  $campo4="fol_reg".$reg."_4";
+$campo4 = "fol_reg" . $reg . "_4";
 
-  $campo5="fol_reg".$reg."_5";
+$campo5 = "fol_reg" . $reg . "_5";
 
-  $sql2="select $campo1, $campo2, $campo3, $campo4, $campo5 from argedo_folios where fol_id=1 ";
+$sql2 = "select $campo1, $campo2, $campo3, $campo4, $campo5 from argedo_folios where fol_id=1 ";
 
 //  echo $sql2."<br>";
 
-  $result2=mysql_query($sql2);
+$result2 = mysql_query($sql2);
 
-  $row2=mysql_fetch_array($result2);
+$row2 = mysql_fetch_array($result2);
 
-  $folio1=$row2["0"];
+$folio1 = $row2["0"];
 
-  $folio2=$row2["1"];
+$folio2 = $row2["1"];
 
-  $folio3=$row2["2"];
+$folio3 = $row2["2"];
 
-  $folio4=$row2["3"];
+$folio4 = $row2["3"];
 
-  $folio5=$row2["4"];
+$folio5 = $row2["4"];
 
-  
+
 
 
 

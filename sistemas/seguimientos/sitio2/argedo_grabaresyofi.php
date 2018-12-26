@@ -8,15 +8,16 @@ require("inc/querys.php");
 $fechamia=date('Y-m-d');
 $regionsession = $_SESSION["region"];
 // $anno=date('Y');
-if($regionsession <> 13 && $regionsession <> 6 && $regionsession <> 10 && $regionsession <> 7 && $regionsession <> 15 && $regionsession <> 2 && $regionsession <> 1 && $regionsession <> 5 && $regionsession <> 12 && $regionsession <> 3 && $regionsession <> 11 && $regionsession <> 9 && $regionsession <> 14)
-{
+//if($regionsession <> 13 && $regionsession <> 6 && $regionsession <> 10 && $regionsession <> 7 && $regionsession <> 15 && $regionsession <> 2 && $regionsession <> 1 && $regionsession <> 5 && $regionsession <> 12 && $regionsession <> 3 && $regionsession <> 11 && $regionsession <> 9 && $regionsession <> 14)
+//{
 	//$fecha2 = "29-12-2017";
-}
+//}
 $anno = substr($fecha2, 6,4);
 $hora=date("h:i");
 $usuario=$_SESSION["nom_user"];
 $regionnombre=$_SESSION["regionnom"];
 $deptonom=$_SESSION["deptonom"];
+$errorFolio="";
 
 $emailPersonal = mysql_query("SELECT correo FROM usuarios WHERE nombre = '".$usuario."'",$dbh);
 $emailPersonal = mysql_fetch_array($emailPersonal);
@@ -29,20 +30,11 @@ $result2=mysql_query($sql2);
 $row2=mysql_fetch_array($result2);
 $mailparte=$row2["mail"];
 
-
-
-
-
-
-
 foreach ($_REQUEST AS $indice => $valor){
   if(!is_numeric($valor)) {
    ${$indice}=strtoupper($valor);
  }
 }
-
-
-
 
 $fecha1= substr($fecha1,6,4)."-".substr($fecha1,3,2)."-".substr($fecha1,0,2);
 $fecha2= substr($fecha2,6,4)."-".substr($fecha2,3,2)."-".substr($fecha2,0,2);
@@ -176,7 +168,7 @@ if (($ti==6 )and $op1=='COMPENSACION HORARIA') {
 }
 
 if ($ti==6 and ($op1=='CONTRATO A HONORARIOS' )) {
- $materia=" APRUEBANSE EL CONTRATO A HONORARIOS A SUMA ALZADA A ".$nombre555." RUN N° ".$rut555."-".$dig555;
+ $materia=" APRUEBANSE EL CONTRATO A HONORARIOS A SUMA ALZADA A ".$nombre555." RUN Nï¿½ ".$rut555."-".$dig555;
 //    $materia=$materiacompuesta;
 }
 
@@ -226,6 +218,53 @@ if (1==1 and $ti<>'') {
 
   mkdir("../../archivos/docargedo/fileargedo".$anno2."/".$subfijo3,0777,true);
   
+ 
+
+
+  $dia1 = strtotime($fechamia);
+// $fechabase =$fechabase;
+  $dia2 = strtotime($fecha2);
+  $diff=$dia2-$dia1;
+// echo "$fechahoy -- $fechabase $diff <br>";
+  $diff2=(intval($diff/(60*60*24)))*-1;
+// if($op1 == "NORMAL")
+// {
+//   $area = $paises2.", ";
+// }else{
+//   $area='';
+// }
+  $rut=$rut.$rut2;
+  $dig=$dig.$dig2;
+/*
+  echo $txtFolio;
+echo $cmbFolioFaltante;
+exit();*/
+if($cmbFolioFaltante=="NO"){
+  //SE REALIZA EL INSERT DE FORMA NORMAL
+  $sql1="INSERT INTO argedo_documentos (docs_defensoria, docs_fechaparte, docs_horaparte, docs_folio, docs_area, docs_subarea, docs_tramite, docs_fecha,docs_materia, docs_obs, docs_anno, docs_fechasis, docs_user, docs_tipodoc, docs_tipo, docs_documento,docs_destinatario,docs_diferencia, docs_archivo,docs_archivo2, docs_archivo3, docs_archivo4, docs_rut, docs_dig, docs_transparencia, docs_codh, docs_numh, docs_annoh, docs_referencia)values ('$regionsession', '$fecha2',     '$hora' ,     '$folio',     '$paises', '$estados',   '$tramite', '$fecha2', '".$area.$materia."', '$obs', '$anno','$fechamia',  '$usuario', '$tipodoc', '$ti',  '$prefijo','$destinatario','$diff2','$destino1','$destino2','$destino3','$destino4','$rut','$dig', '$transparencia', '$codh', '$numh', '$annoh', '$referencia' )";
+}else{
+  //SE VALIDA QUE EL FOLIO QUE INGRESARON NO EXISTA.
+  $sqlFolio ="select docs_id from argedo_documentos where docs_folio =$txtFolio and docs_anno=$anno and docs_defensoria=$regionsession and docs_tipo=$ti order by docs_folio desc;";
+  //echo $sqlFolio;
+  $rsFolio= mysql_query($sqlFolio);
+  $docs_id=0;
+  while($rowFolio = mysql_fetch_array($rsFolio))
+  {
+    $docs_id= $rowFolio['docs_id'];
+  }
+  //si es 0 no existe el documento y se puede ingresar;
+  if($docs_id==0){
+    $folio=$txtFolio;
+    $sql1="INSERT INTO argedo_documentos (docs_defensoria, docs_fechaparte, docs_horaparte, docs_folio, docs_area, docs_subarea, docs_tramite, docs_fecha,docs_materia, docs_obs, docs_anno, docs_fechasis, docs_user, docs_tipodoc, docs_tipo, docs_documento,docs_destinatario,docs_diferencia, docs_archivo,docs_archivo2, docs_archivo3, docs_archivo4, docs_rut, docs_dig, docs_transparencia, docs_codh, docs_numh, docs_annoh, docs_referencia) values ('$regionsession', '$fecha2',     '$hora' ,     '$folio',     '$paises', '$estados',   '$tramite', '$fecha2', '".$area.$materia."', '$obs', '$anno','$fechamia',  '$usuario', '$tipodoc', '$ti',  '$prefijo','$destinatario','$diff2','$destino1','$destino2','$destino3','$destino4','$rut','$dig', '$transparencia', '$codh', '$numh', '$annoh', '$referencia' )";
+  }else{
+    $errorFolio="El Folio que esta tratando de Ingresar ya Existe en el sistema.";
+  }
+
+}
+  /*echo $sql1;
+  exit();*/
+  mysql_query($sql1);
+ 
   if ($archivo1 != "") {
     $archivo1b=$prefijo3."_".$folio."_".$anno2012."_".$regionsession.$rrhh."_1.PDF";
     $destino1 =  "fileargedo".$anno2."/".$subfijo3."/".$archivo1b;
@@ -244,27 +283,6 @@ if (1==1 and $ti<>'') {
   }
 
 
-  $dia1 = strtotime($fechamia);
-// $fechabase =$fechabase;
-  $dia2 = strtotime($fecha2);
-  $diff=$dia2-$dia1;
-// echo "$fechahoy -- $fechabase $diff <br>";
-  $diff2=(intval($diff/(60*60*24)))*-1;
-// if($op1 == "NORMAL")
-// {
-//   $area = $paises2.", ";
-// }else{
-//   $area='';
-// }
-  $rut=$rut.$rut2;
-  $dig=$dig.$dig2;
-  $sql1="INSERT INTO argedo_documentos (docs_defensoria, docs_fechaparte, docs_horaparte, docs_folio, docs_area, docs_subarea, docs_tramite, docs_fecha, docs_materia, docs_obs, docs_anno, docs_fechasis, docs_user, docs_tipodoc, docs_tipo, docs_documento,docs_destinatario,docs_diferencia, docs_archivo, docs_archivo2, docs_archivo3, docs_archivo4, docs_rut, docs_dig, docs_transparencia, docs_codh, docs_numh, docs_annoh, docs_referencia)
-  values ('$regionsession', '$fecha2',     '$hora' ,     '$folio',     '$paises', '$estados',   '$tramite', '$fecha2', '".$area.$materia."', '$obs', '$anno','$fechamia',  '$usuario', '$tipodoc', '$ti',  '$prefijo','$destinatario','$diff2','$destino1','$destino2','$destino3','$destino4','$rut','$dig', '$transparencia', '$codh', '$numh', '$annoh', '$referencia' )";
-
- // echo $sql1;
- // exit();
-  mysql_query($sql1);
-  
   if ($ti==1) {
    $prefijo="RE";
    $subfijo="resexc";
@@ -393,23 +411,26 @@ if ($archivo4 != "") {
 //        exit();
 
 
-if ($ti<>7 or 1==1)  {
-  $sql4="update argedo_folios set $campo='$folio' where fol_id=1 ";
-//  echo $sql4."<br>";
+if ($ti<>7 or 1==1)  
+{
+  if($cmbFolioFaltante=="NO")
+  {
+    $sql4="update argedo_folios set $campo='$folio' where fol_id=1 ";
+    //echo $sql4."<br>";
 
-  mysql_query($sql4);
-//  exit();
-  
+    mysql_query($sql4);
+    //exit();
+  }
 }
 
-$enviarEmail = 1;
+$enviarEmail = 0;
 if($enviarEmail == 1)
 {
 
 //------------- Comineza el mail  ----------------------
 
   $msg="<table border='0' width='100%' style='font-family: Calibri;font-size:11px;'>";
-  $msg.="<tr><td><p style='font-style:italic;color:#EC0303'>”Debe considerar que en virtud de la Ley N° 19.628 Sobre Protección a la Vida Privada Usted está en la obligación de guardar secreto sobre los datos de carácter personal y/o sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitación de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al público y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgación. Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo público sólo podrá efectuarse respecto de las materias de su competencia y con sujeción a la norma mencionada. En esas condiciones, no necesitará el consentimiento del titular.”</p></td></tr>";
+  $msg.="<tr><td><p style='font-style:italic;color:#EC0303'>ï¿½Debe considerar que en virtud de la Ley Nï¿½ 19.628 Sobre Protecciï¿½n a la Vida Privada Usted estï¿½ en la obligaciï¿½n de guardar secreto sobre los datos de carï¿½cter personal y/o sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitaciï¿½n de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al pï¿½blico y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgaciï¿½n. Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo pï¿½blico sï¿½lo podrï¿½ efectuarse respecto de las materias de su competencia y con sujeciï¿½n a la norma mencionada. En esas condiciones, no necesitarï¿½ el consentimiento del titular.ï¿½</p></td></tr>";
   $msg.="<tr><td>En Archivo adjunto, se encuentra documento oficializado en Oficina de Partes.</td></tr>";
   $msg.="<tr><td>Folio : ".$folio."</td></tr>";
   $msg.="<tr><td>Tipo Documento : ".$prefijo2."</td></tr>";
@@ -426,20 +447,20 @@ if($enviarEmail == 1)
 
         if ($archivo1<>'') {
 //             $linkarchivo1="../../archivos/docargedo/".$archivo1;
-             $msg.="Ver archivo1 (pinche aquí): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo1."'>Ver Archivo 1</a><br><br>";
+             $msg.="Ver archivo1 (pinche aquï¿½): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo1."'>Ver Archivo 1</a><br><br>";
         }
         if ($archivo2<>'') {
 //             $linkarchivo2="../../archivos/docargedo/".$archivo2;
-             $msg.="Ver archivo2 (pinche aquí): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo2."'>Ver Archivo 1</a><br><br>";
+             $msg.="Ver archivo2 (pinche aquï¿½): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo2."'>Ver Archivo 1</a><br><br>";
         }
         if ($archivo3<>'') {
 //             $linkarchivo3="../../archivos/docargedo/".$archivo3;
-             $msg.="Ver archivo3 (pinche aquí): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo3."'>Ver Archivo 1</a><br><br>";
+             $msg.="Ver archivo3 (pinche aquï¿½): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo3."'>Ver Archivo 1</a><br><br>";
         }
 
         if ($archivo4<>'') {
 //             $linkarchivo4="../../archivos/docargedo/".$archivo4;
-             $msg.="Ver archivo4 (pinche aquí): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo4."'>Ver Archivo 1</a><br><br>";
+             $msg.="Ver archivo4 (pinche aquï¿½): <a href='http://10.16.25.63/sistemas/archivos/docargedo/".$archivo4."'>Ver Archivo 1</a><br><br>";
         }
 
 */
@@ -448,13 +469,13 @@ if($enviarEmail == 1)
         $msg.="<tr><td height='10'></td></td>";
         $msg.='<tr><td><p class="MsoNormal"><span style="font-size:24.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:#0168B3;mso-fareast-language:ES-CL">&#8212;&#8212;</span><span style="font-size:24.0pt;font-family:&quot;Arial Black&quot;,&quot;sans-serif&quot;;color:#EE3A43;mso-fareast-language:ES-CL">&#8212;&#8212;&#8212;</span><b><span style="font-size:9.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#7F7F7F;mso-fareast-language:ES-CL"><o:p></o:p></span></b></p></td></tr>';
         $msg.="<tr><td><strong>Oficina de Partes</strong></td></tr><tr><td><strong>".$regionnombre."</strong></td></tr>";
-        //$msg.="<tr><td><p style='font-style:italic;color:#EC0303'>”Debe considerar que en virtud de la Ley N° 19.628 Sobre Protección a la Vida Privada Usted está en la obligación de guardar secreto sobre los datos de carácter personal y/o sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitación de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al público y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgación. Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo público sólo podrá efectuarse respecto de las materias de su competencia y con sujeción a la norma mencionada. En esas condiciones, no necesitará el consentimiento del titular.”</p></td></tr>";
+        //$msg.="<tr><td><p style='font-style:italic;color:#EC0303'>ï¿½Debe considerar que en virtud de la Ley Nï¿½ 19.628 Sobre Protecciï¿½n a la Vida Privada Usted estï¿½ en la obligaciï¿½n de guardar secreto sobre los datos de carï¿½cter personal y/o sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitaciï¿½n de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al pï¿½blico y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgaciï¿½n. Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo pï¿½blico sï¿½lo podrï¿½ efectuarse respecto de las materias de su competencia y con sujeciï¿½n a la norma mencionada. En esas condiciones, no necesitarï¿½ el consentimiento del titular.ï¿½</p></td></tr>";
 
         // $msg.="<br><br>";
         // $msg.="Atentamente, <br>";
         // $msg.="Encargado de Oficina de Partes <br> $regionnombre <br>";
         // $msg.="<br><br>";
-        // $msg.="<p style='font-size:1.2em;font-style:italic;color:#EC0303'>Debe considerar que en virtud de la Ley N° 19.628 Sobre Protección a la Vida Privada Usted está en la obligación de guardar secreto sobre los datos de carácter personal y/o sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitación de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al público y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgación. Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo público sólo podrá efectuarse respecto de las materias de su competencia y con sujeción a la norma mencionada. En esas condiciones, no necesitará el consentimiento del titular.”</p>";
+        // $msg.="<p style='font-size:1.2em;font-style:italic;color:#EC0303'>Debe considerar que en virtud de la Ley Nï¿½ 19.628 Sobre Protecciï¿½n a la Vida Privada Usted estï¿½ en la obligaciï¿½n de guardar secreto sobre los datos de carï¿½cter personal y/o sensible contenidos en los documentos que se adjuntan para su conocimiento y exclusiva tramitaciï¿½n de acuerdo a las competencias de este Servicio, toda vez que dichos datos provienen y/o han sido recolectados de fuentes no accesibles al pï¿½blico y se requiere del consentimiento del titular del dato para su tratamiento y/o divulgaciï¿½n. Para lo anterior, debe considerar que el tratamiento de datos personales por parte de un organismo pï¿½blico sï¿½lo podrï¿½ efectuarse respecto de las materias de su competencia y con sujeciï¿½n a la norma mencionada. En esas condiciones, no necesitarï¿½ el consentimiento del titular.ï¿½</p>";
   //     echo $msg;
         $msg.='</table>';
         $nombrereg2=$regionnombre;
@@ -580,20 +601,25 @@ if ($iddocmaster<>'') {
 //------- Fin Para DocMaster, asociar y cerrar documento
 
   }
+$llave=0;
+if($errorFolio!=""){
+  $llave=2;
+}
+
 //exit();
   if(isset($_POST["origen"]) && $_POST["origen"] == "SIAPER")
   {
-    echo "<script>location.href='argedo_resyofi2.php?ti=1&prefijo=&llave=0';</script>";
+    echo "<script>location.href='argedo_resyofi2.php?ti=1&prefijo=&llave=$llave';</script>";
   }
 
   if ($ti==7) {
-   echo "<script>location.href='argedo_resyofi.php?sw=1&ti=$ti&llave=0';</script>";
+   echo "<script>location.href='argedo_resyofi.php?sw=1&ti=$ti&llave=$llave';</script>";
  }
  if ($ti==6) {
-   echo "<script>location.href='argedo_resyofi2.php?sw=1&ti=$ti&llave=0';</script>";
+   echo "<script>location.href='argedo_resyofi2.php?sw=1&ti=$ti&llave=$llave';</script>";
  }
  if ($ti<6 ) {
-   echo "<script>location.href='argedo_resyofi.php?sw=1&ti=$ti&llave=0';</script>";
+   echo "<script>location.href='argedo_resyofi.php?sw=1&ti=$ti&llave=$llave';</script>";
  }
 
  ?>
