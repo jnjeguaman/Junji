@@ -524,6 +524,10 @@ Valorados</A></TD></TR></TBODY></TABLE>
                           }
                           if ($op==3) {
 
+                                   $link="listadoc2.php?reg=$reg&op=$op&periodo=2019";
+?>
+                                   <A onfocus=OnLink(this) href="<? echo $link ?>">2019</A>-
+
                                    $link="listadoc2.php?reg=$reg&op=$op&periodo=2018";
 ?>
                                    <A onfocus=OnLink(this) href="<? echo $link ?>">2018</A>-
@@ -565,6 +569,10 @@ Valorados</A></TD></TR></TBODY></TABLE>
 
                           }
                           if ($op==4) {
+                                   $link="listadoc2.php?reg=$reg&op=$op&periodo=2019";
+?>
+                                   <A onfocus=OnLink(this) href="<? echo $link ?>">2019</A>-
+
                                    $link="listadoc2.php?reg=$reg&op=$op&periodo=2018";
 ?>
                                    <A onfocus=OnLink(this) href="<? echo $link ?>">2018</A>-
